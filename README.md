@@ -346,10 +346,49 @@ El código del bootstrap loader es instalado por el programa de instalación del
 
 Para las instalaciones nuevas, el programa de instalación de Windows creará, de forma predeterminada, una partición de sistema Extensible Firmware Interface (partición de sistema EFI o ESP), una partición reservada de Microsoft® (MSR) y una partición principal de Windows.
 
+![EFI](https://user-images.githubusercontent.com/89795512/132541447-f1529ccc-2afc-4e1a-8173-12660bf58320.PNG)
+
+
+La instalación de Windows crea una partición ESP en el equipo cuando:
+No existe una partición ESP.
+
+    • Hay suficiente espacio en disco para crear una partición de 100 MB.
+
+La instalación de Windows crea la partición MSR cuando:
+
+    • No existe una partición MSR.
+    • Hay suficiente espacio en disco para crear una partición de 128 MB.
+
+La creación de la partición ESP tiene prioridad sobre la partición MSR porque la partición ESP es necesaria para arrancar el equipo.
+
+
+
+** <b>2.7. Administrar particiones en Windows de forma gráfica</b>
+
+En Windows podemos configurar los discos en dos tipos:
+
+    • Disco básico: es un disco físico que contiene particiones primarias, extendidas o dispositivos lógicos (volúmenes básicos).
+
+    • Disco dinámico: es un disco físico que contiene volúmenes dinámicos.
+
+Convertir discos básicos a dinámicos en Windows
+
+Condiciones:
+
+    • Disponer al menos 1 MB libre al final del disco
+    • Cerrar todos los programas ejecutados en ellos
+    • No puede ser un medio extraible (pendrive)
+    • No puede ser un disco duro externo que utilice USB o Firewire
+
+Una vez convertido, no se podrá convertir los volúmenes dinámicos en particiones, no podrá contener particiones ni unidades lógicas, tampoco se  tendrá acceso desde MS-DOS o Windows anteriores a Windows 2000. Todas las particiones se convertirán en volúmenes simples
+
+Para realizar la conversión tenemos realizar lo siguiente:
+
+    1. Ir al Administrador de discos
+    2. Seleccionar el disco que se desea actualizar, en su menú contextual, seleccionar convertir en disco dinámico
+
 
 
     
-   
-  
-    
 
+![ad equipos](https://user-images.githubusercontent.com/89795512/132541689-0b3de9dd-6307-4780-b5ae-361d4818325b.PNG)
