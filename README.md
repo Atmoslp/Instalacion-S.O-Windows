@@ -53,7 +53,7 @@ Configuración posteriores a la instalación
 
  <br>
  
-  <br>
+ <br>
                                         
 					######## 1.1 Instalar un Sistema Operativo ######## 
 					   
@@ -302,16 +302,16 @@ Las desventajas de utilizar particiones:
 Es un tipo de bloque de arranque popularizado por IBM. Fue utilizado históricamente por  DOS, Microsoft Windows y Linux y otros sistemas operativos compatibles con PC. 
 
 
-<h3>Partición primaria</h3>
+<b>Partición primaria</b>
 
 Son las divisiones crudas del disco. Solo puede haber 4 en controladores IDE (15 en discos SCSI) de éstas o 3 primarias y una extendida. Depende de una tabla de particiones 
 
-<h3>Partición extendida o secundaria</h3>
+<b>Partición extendida o secundaria</b>
 
 Actúa como una partición primaria; sirve para contener infinidad de unidades lógicas en su interior. 
 Fue ideada para romper la limitación de 4 particiones primarias en un solo disco físico. Solo puede existir una partición de este tipo por disco y solo sirve para contener particiones lógicas.
 
-<h3>Partición lógica</h3>
+<b>Partición lógica</b>
 Ocupa una porción de la partición extendida o la totalidad de la misma.
 Se formatea con un tipo específico de sistema de archivos (FAT32, NTFS,...) y se le asigna una unidad. 
 No se puede instalar un Sistema Operativo en una partición lógica.
@@ -319,7 +319,8 @@ No se puede instalar un Sistema Operativo en una partición lógica.
 ![Sistema Particiones](https://user-images.githubusercontent.com/89795512/132535206-31da8ad4-6ecb-460e-8540-9ddc5056b8fd.jpg)
 
 
-
+<br>
+<br>
 
 
 <b>** 2.5. Esquema de particiones de tabla de partición GUID (GPT)</b>
@@ -371,7 +372,8 @@ La instalación de Windows crea la partición MSR cuando:
 
 La creación de la partición ESP tiene prioridad sobre la partición MSR porque la partición ESP es necesaria para arrancar el equipo.
 
-
+<br>
+<br>
 
 ** <b>2.7. Administrar particiones en Windows de forma gráfica</b>
 
@@ -480,3 +482,112 @@ Diskpart es una herramienta de línea de comandos incluida a partir del Windows 
     • En la línea de comandos escribe diskpart.
     • Para conseguir una lista de los comandos disponibles en diskpart  usa el comando ? ó help.
     • Para mostrar todos los discos usamos el comando list disk
+    
+    
+ Discos básicos
+
+    • Crear partición primaria: create partition primary [size=n] 
+    • Escribe list partition para mostrar las particiones existentes en el equipo.
+    • Crear partición extendida create partition extended [size=n] 
+    • Crear partición lógica create partition logical [size=n] 
+    • Asignar una letra a la partición assign letter=H
+    • Buscar dispositivos nuevos Rescan.
+    • Borra todos los datos y particiones del disco. Clean all
+    • Quitar una letra de una partición. Remove 
+    
+ Discos dinámicos
+
+    • Crear un volumen simple: create volume simple [size=n] [disk=n]
+    • Escribe list volume para mostrar los volúmenes existentes en el equipo.
+    • Escribe Select volume <número de volumen> donde número de volumen es el número del volumen que quieras seleccionar
+    • Escribe extend [size=m] [disk=n]  para extender el volumen seleccionado al disco n con tamaño m MB
+    • Escribe shrink [desired=n] [minimun=m]  para reducir el volumen seleccionado n MB con un tamaño mínimo de m MB
+    • Escribe delete volume <número de volumen> para eliminar el volumen
+
+Más opciones del comando diskpart https://technet.microsoft.com/es-es/library/cc766465(v=ws.10).aspx
+
+
+
+
+
+<br>
+<br>
+<br>
+
+
+							
+							######## 3.1 Sistemas de Ficheros ########
+    
+
+Los archivos están almacenados en soportes de almacenamiento permanente. El SO los manipula a través de herramientas como el gestor de archivos.
+
+A nivel de programas, un archivo es una secuencia de bytes sin orden o agrupados en registros. Como se almacenan en dispositivos orientados a bloques, los archivos o ficheros están compuestos de bloques de tamaño fijo, normalmente 512 bytes. El sistema de archivos permite la organización de estos bloques en archivos o directorios. Guarda, además, la información de qué bloques pertenecen a qué archivos y cuáles están libres.
+
+El sistema de ficheros debe ofrecer los siguientes servicios:
+
+    • Seguridad y permisos.
+    • Mecanismos para evitar la fragmentación
+    • Capacidad de enlaces simbólicos o duros
+    • Integridad de archivos
+    • Soporte para archivos dispersos
+    • Cuotas de disco
+    • Soportar el crecimiento del sistema de archivos.
+    • Caches de disco
+    
+Los discos tienen su propia caché, pero el SO puede implementar una caché en memoria principal para no tener que hacer tantas peticiones al disco. La gestión de la caché es similar a la gestión de la memoria. Hay dos maneras de comunicar la caché con el disco:
+
+    • Escritura diferida, en la que se escribe en caché para luego pasar al disco
+    • Escritura directa, en la que se escribe en la caché y el disco a la vez
+
+La caché mejora considerablemente el rendimiento del sistema.
+
+El tamaño medio que ocupan los archivos en Linux y Windows es de 1KB, por lo que se recomienda bloques de tamaño de 512 bytes, 1 KB o 2 KB en discos de hasta 16 TB.
+Si el disco es de gran capacidad, se utilizarán bloques de 8KB ( 16-32TB) a 64KB (>256TB). Si se elige un tamaño de bloque de 2KB en un disco con 512 bytes de tamaño de sector, cada bloque estará formado por 4 sectores.
+Algunos sistemas de archivos modernos utilizan extends. Son un conjunto de bloques contiguos reservados para un fichero para mejorar el rendimiento y reducir la fragmentación
+
+
+ <br>
+ <br>
+
+<b>** 3.2. FAT32</b>
+
+Este formato es el más antiguo de todos, y lleva presente entre nosotros desde el lanzamiento de Windows 95, el cual fue desarrollado para sustituir al anterior FAT16.
+
+Ser el formato más antiguo tiene sus ventajas, por ejemplo, que prácticamente cualquier dispositivo va a ser compatible con él, especialmente si estamos hablando de compartir archivos entre dos ordenadores. Por ejemplo, es posible copiar un archivo en una memoria USB formateada en FAT32 desde Windows y leer su contenido, por ejemplo, en un televisor, un móvil o una videoconsola, los cuales probablemente no sean compatibles con el privativo NTFS.
+
+Sin embargo, este sistema antiguo tiene una limitación muy grave, y es que no puede almacenar archivos de más de 4 GB. Mientras los archivos sean menores de ese tamaño, o estén divididos, no hay problema, sin embargo, si intentamos copiar un archivo de más de dicho tamaño obtendremos un error. Otra limitación, aunque menos importante, es que las particiones en FAT32 no pueden ser mayores de 8 TB.
+
+El uso ideal de FAT32 es para memorias externas donde no vayamos a guardar archivos mayores de 4GB y queramos asegurarnos que es compatible con prácticamente todo tipo de dispositivos.
+
+ <br>
+ <br>
+
+<b>** 4.2. NFTS</b>
+
+Este formato es el sucesor de FAT32, desarrollado por Microsoft. NTFS elimina las dos limitaciones de FAT32 (los 4GB y los 8TB). Este formato de archivos también incluye una serie de novedades y mejoras necesarias para que los sistemas operativos modernos puedan funcionar sin problema y, sobre todo, en temas de seguridad, entre otras:
+
+    • Escalabilidad: Teóricamente soporta volúmenes de hasta 16 EB
+    • Journaling: Crear y guardar un diario de cambios que nos pueden ayudar a recuperarnos rápidamente de los errores si el ordenador se bloquea.
+    • Compresión
+    • Cifrado: Encrypting File System (EFS)
+    • Cuotas
+    • Redimensionamiento
+    • Seguridad: Posibilidad de configurar permisos de archivo.
+    • Volume Shadow Copy  (VSS): Soporta la creación de copias de seguridad instantáneas.
+
+Sin embargo, aunque a nivel lógico NTFS es un sistema de archivos muy avanzado y prácticamente sin limitaciones (a día de hoy), tiene el principal inconveniente de la compatibilidad. Todos los sistemas operativos modernos de Windows funcionan perfectamente con NTFS, sin embargo, si vamos a utilizar otros sistemas como Mac OS X o Linux es posible que tengamos dificultad para leer y, sobre todo, escribir datos en estas unidades, salvo que utilicemos software de terceros. Igualmente es muy probable que en muchos dispositivos (móviles, televisores, reproductores multimedia, etc) no sean compatibles con este formato de archivos, por lo que de conectar una unidad NTFS a estos equipos no compatibles nos devolverá un error, en el mejor de los casos.
+
+Este formato es el ideal para trabajar con discos duros internos que vayamos a utilizar con Windows.
+    
+ <br>
+ <br>
+ 
+<b>** 4.3. exFAT</b>
+
+	exFAT vio la luz en 2006 y se introdujo en la mayoría de los sistemas operativos modernos, incluido Windows XP. Este sistema de archivos está pensado para unidades flash, siendo un sistema mucho más liviano que NTFS, sin las características de seguridad de este, pero también sin las limitaciones de FAT32.
+
+	Todos los sistemas operativos de PC (Windows, Mac y Linux (aunque en este es posible que tengamos que instalar algunas librerías)) son compatibles de forma nativa con exFAT, al contrario que con NTFS. Este formato de archivos también es compatible con un gran número de dispositivos (televisiones, reproductores multimedia, videoconsolas, etc), aunque no llega al nivel de compatibilidad de FAT32.
+
+	exFAT podría definirse como una actualización de FAT32 donde prima principalmente la compatibilidad y sencillez del formato de archivos, aunque eliminando las restricciones de los 4GB por archivo y 8 TB de tamaño máximo de partición.
+
+	El uso recomendado para exFAT es para unidades externas (generalmente memorias USB o tarjetas SD) donde vayamos a guardar archivos de más de 4 GB y que queramos que sea compatible con el mayor número de dispositivos posibles. Si no vamos a guardar archivos de más de 4 GB en esas unidades, mejor optar por FAT32.  
