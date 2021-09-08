@@ -53,7 +53,7 @@ Configuración posteriores a la instalación
 
  <br>
  
- 
+  <br>
                                             ######## 1.1 Instalar un Sistema Operativo ######## 
 					   
   
@@ -65,6 +65,7 @@ Una familia de SSOO está formada por versiones antiguas del sistema que han dej
 Por ejemplo, en el caso de Apple tenemos el macOS Big Sur como versión más reciente para ordenadores y iOS 14 para móviles y tabletas.
 Microsoft actualmente tiene como versión más reciente Windows 10 tanto para ordenadores como dispositivos móviles.
 
+<br>
 <br>
 
 **   <b>  1.2. Requisitos mínimos </b>
@@ -110,7 +111,8 @@ Para llevar a cabo la instalación de Microsoft Windows tendremos en cuenta las 
 
 
 <br>
- 
+<br>
+
  **   <b> 1.3. Selección del Sistema Operativo Windows </b>
 
 En la página oficial del Sistema Operativo Windows de Microsoft tenemos información oficial del producto: https://www.microsoft.com/es-es/windows
@@ -119,6 +121,8 @@ En esta página podemos consultar una tabla comparativa de sus diversas versione
 
 En la siguiente tabla mostramos las diferencias más importantes entre las distintas versiones de Windows 7, 8.1 y 10, que hemos obtenido de https://www.microsoft.com/es-es/windows/compare
 
+
+<br>
 <br>
 
 **   <b> 1.4. Ediciones de Windows 10 </b>
@@ -133,8 +137,10 @@ En la siguiente tabla mostramos las diferencias más importantes entre las disti
         
      • Education: Para alumnos que esté estudiando por un tiempo determinado y quieran 
        aprender a configurar equipos a nivel avanzado.
+       
     
-
+<br>
+<br>
 
 **   <b> 1.5. Requisitos técnicos del Sistema Operativo </b>
 
@@ -181,21 +187,16 @@ Cuando un controlador de un dispositivo supera las pruebas de compatibilidad, se
 
 En caso de que Windows no encuentre el driver, tendremos que ir a la web del fabricante del hardware y descargar el controlador para nuestra versión de Windows.
 
+
  <br>
 
  <br>
  
+ <br>
  
  
  
- 
- 
- 
- 
- 
- 
- 
-                                                  2.1 Planificación de la instalación
+                                             ######## 2.1 Planificación de la instalación ########
 
 Antes de empezar la instalación del Sistema Operativo en el ordenador es conveniente planificar el proceso por los siguientes motivos:
 
