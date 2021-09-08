@@ -182,6 +182,16 @@ En caso de que Windows no encuentre el driver, tendremos que ir a la web del fab
 
  <br>
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
                                                   2.1 Planificación de la instalación
 
 Antes de empezar la instalación del Sistema Operativo en el ordenador es conveniente planificar el proceso por los siguientes motivos:
@@ -299,6 +309,10 @@ No se puede instalar un Sistema Operativo en una partición lógica.
 
 ![Sistema Particiones](https://user-images.githubusercontent.com/89795512/132535206-31da8ad4-6ecb-460e-8540-9ddc5056b8fd.jpg)
 
+
+
+
+
 ** <b>2.5. Esquema de particiones de tabla de partición GUID (GPT)</b>
 
 Hoy en día todos los Sistemas Operativos soportan. Es parte del estándar  Unified Extensible Firmware Interface (EFI) propuesto por Intel para reemplazar la vieja BIOS del PC.
@@ -316,8 +330,26 @@ Las principales ventajas de GPT frente a MBR son:
 ![GPT](https://user-images.githubusercontent.com/89795512/132539970-90e9c8ac-5fbf-4f07-8bc2-b28ed0134e24.jpg)
 
 
+
+
+** <b>2.6. Preparar las particiones de los S.O. para permitir su arranque.</b>
+
+Para que un disco sea bootable debe tener debe contener:
+
+    • Una tabla de particiones GUID
+    • Al menos una partición
+    • Una entrada en su GPT
+
+La GPT es creada por un programa especial que se encarga de crear las particiones en el disco. En windows diskpart.exe.
+
+El código del bootstrap loader es instalado por el programa de instalación del Sistema Operativo.
+
+Para las instalaciones nuevas, el programa de instalación de Windows creará, de forma predeterminada, una partición de sistema Extensible Firmware Interface (partición de sistema EFI o ESP), una partición reservada de Microsoft® (MSR) y una partición principal de Windows.
+
+
+
     
    
-    
+  
     
 
