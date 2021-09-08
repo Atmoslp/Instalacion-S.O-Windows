@@ -718,6 +718,9 @@ Después de pasar Secure Boot, se activa Trusted Boot. El bootloader verifica la
 
 Permite que un servidor de confianza en la red verifique la integridad del proceso de arranque en Windows. Dependiendo de la configuración permite detectar si el cliente está sano y darle acceso a toda la red o solo a una parte limitada mientras esté en cuarentena.
 
+<br>
+<br>
+
 <b> ** 4.3. Reparación de MBR </b>
 
 Tenemos que iniciar el sistema desde el CD original de instalación de Windows. Llegará un momento en que el propio programa de instalación nos dará la opción de realizar una reparación automática del inicio de Windows. Escogemos esta opción y comprobamos si el sistema es capaz de repararse automáticamente. 
@@ -745,3 +748,154 @@ Desde allí podemos ejecutar las siguientes órdenes:
 3. Este comando recupera el sector de arranque de Windows 7.
 
 		bootrec.exe /fixboot
+
+<br>
+
+Si esto no funciona podremos probar a restaurar el código del sector de arranque con los siguientes comandos:
+
+1. Averiguamos la letra de la unidad de instalación del CD/DVD o pendrive escribiendo los siguientes comandos
+
+		diskpart
+		select disk 0
+		list volume
+
+2. Buscamos la palabra  “DVD-ROM” o “extraible” en la columna “Type”. La letra está en la columna Ltr. Si la unidad fuera D:\, escribe los siguientes comandos:
+
+		exit
+		D:
+		cd boot
+		dir
+
+Recuerda, si la letra de la unidad es diferente a D:\, reemplaza el segundo comando con la letra de la unidad que vieras con el comando list
+
+3. Escribe el siguiente comando
+
+		bootsect /nt60 SYS /mbr
+	
+4. Pulsa Intro
+5. Quita el DVD o pendrive  
+6. Escribe Exit
+7. Presiona Intro para reiniciar el ordenador
+
+<br>
+<br>
+
+<b> ** 4.4. Reparación de EFI Bootloader </b>
+
+Si tienes un  CD/DVD/USB Windows arrancable, selecciona "Reparar el equipo"
+
+![image](https://user-images.githubusercontent.com/89795512/132572153-b21d39d3-9df0-42a5-8b74-d5ef4a883b86.png)
+
+Selecciona "Solucionar problemas"
+
+![image](https://user-images.githubusercontent.com/89795512/132572309-6fa479ff-bb06-4a78-81df-1fe9306100e1.png)
+
+Y a continuación, "Opciones avanzadas"
+
+![image](https://user-images.githubusercontent.com/89795512/132572382-876f37fa-1427-4f31-9dde-307da45aadbd.png)
+
+Para terminar, "Símbolo del sistema"
+
+![image](https://user-images.githubusercontent.com/89795512/132572428-ae54f03c-dcd1-490c-8f97-058ca5f52bfe.png)
+
+
+<br>
+
+Si no tienes un CD/DVD/USB Windows
+
+Reinicia el PC
+Toca rápidamente sobre la tecla F8 una vez que el PC se ha encendido, (o en su defecto, la tecla asignada por el fabricante de tu placa base. Compruébalo por google)
+
+Tenga en cuenta que este puede tardar varios intentos. El tiempo para esta opción se ha acortado notablemente en Windows 7.
+Seleccione Reparar el equipo desde el menú que aparece.
+
+Seleccione el símbolo de la ficha Opciones avanzadas en la solución pantalla):
+
+<b> 1. En la ventana del símbolo del sistema: </b>
+	
+a. escribe y ejecuta el siguiente comando:
+
+		Diskpart
+		
+b. Escribe y ejecuta el siguiente comando:
+
+		sel disk 0
+		
+c. Escribe y ejecuta el siguiente comando:
+
+		list vol
+
+![image](https://user-images.githubusercontent.com/89795512/132573065-a3269132-3d6a-4252-9525-f371486ee9d1.png)
+
+
+<b> 2. Comprueba que la partición EFI utiliza el sistema de archivos FAT32 y asigne una letra de unidad  </b>
+
+
+a. Escribe y ejecuta el siguiente comando:
+      
+	sel vol <number of volume>
+	
+b. Escribe y ejecuta el siguiente comando:
+	
+	assign letter=<drive letter>
+	
+c. Escribe y ejecuta el siguiente comando:
+	
+	exit
+			
+![image](https://user-images.githubusercontent.com/89795512/132573327-b2730c05-6fbd-4a6b-9258-fa9c0fae2182.png)
+		
+		
+3. Para reparar el registro de inicio :
+
+a. Escribe y ejecuta el siguiente comando:
+      
+  	 cd /d <drive letter>:\EFI\Microsoft\Boot\
+	 
+b. Escriba y ejecute el siguiente comando:
+      
+ 	bootrec /FixBoot	
+	
+
+4. Reconstruir el almacén BCD
+
+a. En primer lugar ejecutamos el siguiente comando para hacer una copia de seguridad de la BCD vieja:
+
+	ren BCD BCD.old 
+	
+b. Ahora volvemos a crearlo con este comando:
+	
+	bcdboot c:\Windows /l es-es /s <boot letter>: All
+
+El parámetro /f ALL actualiza la configuración de la BIOs incluido el Firmware/NVRAM de UEFI, /l  es-es es para utilizar el locale Español de españa es/ES. 
+
+Reinicia y cruza los dedos...
+
+http://www.dell.com/support/Article/es/es/esbsdt1/SLN300987/ES
+
+
+<br>
+<br>
+
+<b> ** 4.5. Modo seguro </b>
+
+La forma normal de encender el sistema es simplemente pulsando el botón de encendido del equipo. Si la última vez que utilizamos el equipo lo cerramos correctamente, el equipo se volverá a encender de forma correcta.
+
+A veces ocurre que el sistema no se cierra de forma adecuada. Las causas pueden ser: bloqueo del equipo, corte del fluido de corriente eléctrica, instalación de software no verificado, virus, etc. En este caso puede aparecernos una pantalla en modo texto con varias opciones que nos permitirá iniciar el sistema de una u otra forma, dependiendo de lo que queramos hacer.
+
+![image](https://user-images.githubusercontent.com/89795512/132575369-b6d2977e-3bb7-44c5-8a7b-dcc69d695b30.png)
+
+
+Esta forma de arrancar el equipo también es voluntaria, es decir, puede que simplemente queramos seleccionar una opción de iniciar el sistema diferente a la normal, y que no tiene por qué ser necesariamente por un problema. En este caso, cuando esté iniciándose el equipo, pulsaremos repetidamente la tecla F8 y nos aparecerán las diferentes opciones de inicio.
+
+En general, se muestra una lista de herramientas de recuperación del sistema que se pueden utilizar para reparar problemas de inicio, e¡ecutar diagnósticos o restaurar el sistema. Esta opción solo está disponible si las herramientas están instalados en el disco duro del equipo. Si tienes un disco de instalación de Windows, las herramientas de recuperación del sistema se encuentran en el disco de instalación.
+
+Con el lanzamiento de Windows 8, la implementación de las UEFI en la mayoría de equipos nuevos y el auge de las unidades de estado sólido para almacenamiento, las cosas han cambiado y no podemos acceder con el habitual ‘F8’ en todos los equipos. Ello no quiere decir que no podamos acceder al mismo pero de otras formas.
+
+En Windows 8 y 10 se pulsa SHIFT+ F8, es un comando correcto y el método más rápido para arrancar en modo seguro en Windows 10 pero no funciona en la mayoría de equipos con UEFI y SSD. Microsoft explica que la rapidez de las nuevas BIOS UEFI sumadas a la de una unidad de estado sólido no dejan tiempo para interrumpir el proceso. Si has actualizado (o tienes pensado hacerlo) a Windows 10 desde Windows 7 sin implementación de UEFI, seguro que te va a funcionar.
+
+Otra forma es mantener pulsada la tecla mayúsculas a la vez que haces clic en reinicio del sistema. Abre el menú de inicio y pulsa sobre el botón de apagado. Con la tecla mayúsculas pulsada (Shift) haz clic sobre el botón de reinicio.
+
+![image](https://user-images.githubusercontent.com/89795512/132575577-31ef8eca-0e0a-4ed2-b8aa-1de2db239d5d.png)
+
+
