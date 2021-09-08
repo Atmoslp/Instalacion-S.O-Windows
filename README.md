@@ -76,8 +76,11 @@ Microsoft actualmente tiene como versión más reciente Windows 10 tanto para or
 <br>
 <br>
 
+
+![requisitos](https://user-images.githubusercontent.com/89795512/132556850-fb0775d1-134b-47e9-9d92-ecd821cd6640.png)
+
 **   <b>  1.2. Requisitos mínimos </b>
-![REQUISITOS-MINIMOS](https://user-images.githubusercontent.com/89795512/132554418-d61d1cdf-430f-4bf4-87fd-b457c8131b06.png)
+
 
 
 Los Sistemas Operativos necesitan unas características mínimas y recomendadas:
