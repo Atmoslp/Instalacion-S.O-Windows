@@ -898,4 +898,14 @@ Otra forma es mantener pulsada la tecla mayúsculas a la vez que haces clic en r
 
 ![image](https://user-images.githubusercontent.com/89795512/132575577-31ef8eca-0e0a-4ed2-b8aa-1de2db239d5d.png)
 
+Accederás a otra pantalla de configuración que te permitirá acceder al modo seguro, mediante “Solución de problemas-Opciones avanzadas-Configuración de Inicio”.
+
+![image](https://user-images.githubusercontent.com/89795512/132576076-89c3456c-a3e1-4ab0-96dd-454cced75081.png)
+
+Reinicia el sistema y accederás a una pantalla que te permitirá inicio en modo seguro, con funciones de red, con símbolo del sistema, etc.
+
+![image](https://user-images.githubusercontent.com/89795512/132576171-9919f302-8fd3-42ed-9ab6-d03c4461b120.png)
+
+
+
 
