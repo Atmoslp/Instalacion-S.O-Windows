@@ -386,9 +386,49 @@ Para realizar la conversión tenemos realizar lo siguiente:
 
     1. Ir al Administrador de discos
     2. Seleccionar el disco que se desea actualizar, en su menú contextual, seleccionar convertir en disco dinámico
-
-
-
+    3. Seleccionar los discos que se desea actualizar y pulsar aceptar
     
+	Cuando esté preparado, pulsar en convertir, mostrará una ventana de aviso, pulsar Sí
 
+    4. Si hay una partición en uso, mostrará un mensaje indicando que se desmontarán, pulsar sí
+    5. Mostrará un aviso de que se reiniciará el equipo para completar el proceso. Pulsar Aceptar.
+    6. Si volvemos al administrador de discos, mostrará el disco convertido en dinámico.
+    
 ![ad equipos](https://user-images.githubusercontent.com/89795512/132541689-0b3de9dd-6307-4780-b5ae-361d4818325b.PNG)
+
+
+<b>Convertir dinámicos a discos básicos en Windows</b>
+
+
+Condiciones:
+
+    • Realizar una copia de seguridad o mover los datos
+    • El disco no puede contene![volumen](https://user-images.githubusercontent.com/89795512/132542173-d526ae5a-a713-42ed-8445-b91b934731b4.PNG)
+r datos
+    • No se pueden cambiar los volúmenes dinámicos en particiones
+    • Hay que borrar todos los volúmenes del disco dinámico
+
+Una vez convertido, solo se podrán crear particiones y unidades lógicas 
+
+Para realizar la conversión tenemos realizar lo siguiente:
+
+
+    1. Ir al Administrador de discos
+    2. Seleccionar el disco que se desea convertir
+    3. Situarse en uno de los volúmenes que contenga y mostrar el menú contextual, seleccionar Eliminar volumen y confirmar.
+    4. Repetir el proceso con todos los volúmenes que contenga
+    5. Cuando no quede ningún volumen automáticamente se convertirá en disco básico. En caso contrario mostrar el menu contextual y seleccionar Convertir en disco básico
+    6. Una vez finalizado, crear las particiones que desees
+
+Crear un volumen simple de forma gráfica
+
+    1. Ir al Administrador de discos y seleccionar el espacio no asignado de un disco dinámico y pulsar el botón derecho para mostrar el menú contextual
+    2. Seleccionar Nuevo volumen simple (Nuevo volumen en Windows server 2003) y pulsar siguiente
+    3. Elegir Simple y pulsar siguiente
+    4. En la pantalla, indicar que tamaño tendrá el volumen y pulsar siguiente
+    5. Asignar una letra de unidad al volumen que está creando o montar la unidad en una carpeta NTFS
+    6. Pulsar siguiente  y en la pantalla indicar si desea formatear el volumen. 
+    7. Pulsar siguiente
+    8. Verificar que todo es correcto y pulsar finalizar
+
+
