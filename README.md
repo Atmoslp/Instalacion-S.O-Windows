@@ -118,6 +118,8 @@ Para llevar a cabo la instalación de Microsoft Windows tendremos en cuenta las 
 <br>
 
  **   <b> 1.3. Selección del Sistema Operativo Windows </b>
+ ![SELECCION-S O](https://user-images.githubusercontent.com/89795512/132552742-80c56d8a-4703-4ca3-919f-5f1249d3dc13.png)
+
 
 En la página oficial del Sistema Operativo Windows de Microsoft tenemos información oficial del producto: 
 https://www.microsoft.com/es-es/windows
