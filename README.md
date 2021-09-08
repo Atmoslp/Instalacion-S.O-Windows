@@ -313,7 +313,7 @@ Las principales ventajas de GPT frente a MBR son:
       en el caso de que los primeros están dañados.
     • Checksum CRC32 para detectar errores y daños de la cabecera y en la tabla de particiones al proporcionar redundancia.
     
-    ![GPT](https://user-images.githubusercontent.com/89795512/132539267-7cfbb81f-7d7f-444d-a2c3-b5e919018af4.jpg)
+    ![GPT](https://github.com/Atmoslp/Sistemas-monousuario/blob/master/GPT.jpg)
 
     
    
