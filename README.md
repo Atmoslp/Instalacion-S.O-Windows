@@ -311,4 +311,8 @@ Las principales ventajas de GPT frente a MBR son:
     • No es necesario crear particiones extendidas ni lógicas, por defecto admite hasta 128 particiones.
     • Almacena una copia de seguridad del encabezado y de la tabla de particiones al final del disco que ayuda en la 		recuperación en el caso de que los primeros están dañados.
     • Checksum CRC32 para detectar errores y daños de la cabecera y en la tabla de particiones al proporcionar 			redundancia.
+    
+    
+    
+    
 
