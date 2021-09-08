@@ -59,7 +59,8 @@ Configuración posteriores a la instalación
  <br>
                                         
 					######## 1.1 Instalar un Sistema Operativo ######## 
-![INSTALACION-SO](https://user-images.githubusercontent.com/89795512/132554018-5a0ad004-e840-4f12-b184-9eae4fa1d385.png)
+![INSTALACION-SOV 2](https://user-images.githubusercontent.com/89795512/132555599-0940007f-9db7-423b-99d1-034a34e4e0fd.png)
+
 
 					   
   
