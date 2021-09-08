@@ -2,11 +2,6 @@
 
 
 
-
-
-<h2>#ÍNDICE</h2>
-
-
 ![ÍNDICE](https://user-images.githubusercontent.com/89795512/132549498-85922375-6c1f-4621-893c-c788814fc22c.png)
 
 
