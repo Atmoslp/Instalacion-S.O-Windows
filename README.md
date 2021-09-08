@@ -297,3 +297,16 @@ No se puede instalar un Sistema Operativo en una partición lógica.
 
 ![Sistema Particiones](https://user-images.githubusercontent.com/89795512/132535206-31da8ad4-6ecb-460e-8540-9ddc5056b8fd.jpg)
 
+** <b>2.5. Esquema de particiones de tabla de partición GUID (GPT)</b>
+
+Hoy en día todos los Sistemas Operativos soportan. Es parte del estándar  Unified Extensible Firmware Interface (EFI) propuesto por Intel para reemplazar la vieja BIOS del PC.
+
+La GPT sustituye al Master Boot Record (MBR) usado con la BIOS. Se basa en las capacidades extendidas del EFI para estos procesos. 
+
+Las principales ventajas de GPT frente a MBR son:
+
+    • Admite discos de más de 2 TB hasta teóricamente 2 ZB ( 2*109 TB).
+    • No es necesario crear particiones extendidas ni lógicas, por defecto admite hasta 128 particiones.
+    • Almacena una copia de seguridad del encabezado y de la tabla de particiones al final del disco que ayuda en la 		recuperación en el caso de que los primeros están dañados.
+    • Checksum CRC32 para detectar errores y daños de la cabecera y en la tabla de particiones al proporcionar 			redundancia.
+
