@@ -55,6 +55,7 @@ Configuración posteriores a la instalación
  
  
                                             ######## 1.1 Instalar un Sistema Operativo ######## 
+					    ----------------------------------------------------
   
 Después de conocer las técnicas básicas que utilizan los SSOO para gestionar los recursos de hardware, es hora de aprender a instalar un sistema operativo.
 En esta unidad voy explicar los pasos necesarios para la instalación de los sistemas operativos monousuarios propietarios más extendidos hoy en día, los de Microsoft Windows.
