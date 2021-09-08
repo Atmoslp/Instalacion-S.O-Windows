@@ -350,9 +350,9 @@ Para las instalaciones nuevas, el programa de instalación de Windows creará, d
 
 
 La instalación de Windows crea una partición ESP en el equipo cuando:
-No existe una partición ESP.
-
-    • Hay suficiente espacio en disco para crear una partición de 100 MB.
+	
+	• No existe una partición ESP.
+	• Hay suficiente espacio en disco para crear una partición de 100 MB.
 
 La instalación de Windows crea la partición MSR cuando:
 
@@ -403,15 +403,13 @@ Para realizar la conversión tenemos realizar lo siguiente:
 Condiciones:
 
     • Realizar una copia de seguridad o mover los datos
-    • El disco no puede contene![volumen](https://user-images.githubusercontent.com/89795512/132542173-d526ae5a-a713-42ed-8445-b91b934731b4.PNG)
-r datos
+    • El disco no puede contener datos
     • No se pueden cambiar los volúmenes dinámicos en particiones
     • Hay que borrar todos los volúmenes del disco dinámico
 
 Una vez convertido, solo se podrán crear particiones y unidades lógicas 
 
 Para realizar la conversión tenemos realizar lo siguiente:
-
 
     1. Ir al Administrador de discos
     2. Seleccionar el disco que se desea convertir
@@ -433,4 +431,33 @@ Crear un volumen simple de forma gráfica
 
 ![volumen](https://user-images.githubusercontent.com/89795512/132542311-6e301fd5-b9a2-4516-94ae-0374878fb5cc.PNG)
 
+
+<b>Extender un volumen de forma gráfica
+	
+
+    1. Ir al Administrador de discos y seleccionar el volumen que quieras extender, pulsar el botón derecho para mostrar el menú contextual y selecciona Extender volumen
+    2. Pulsa siguiente y verás una pantalla en la que se ven los discos que tienen espacio sin asignar, selecciona el disco o discos donde vas a extender el volumen y el tamaño          que vas a utilizar en cada uno de ellos.
+    3. Después pulsa siguiente y verás la pantalla de finalización del asistente con un resumen
+    4. Pulsar Finalizar y se extenderá el volumen.
+
+<b>Reducir un volumen (windows 10 y server 2012)
+
+    1. Ir al Administrador de discos y seleccionar el volumen que quieras reducir, pulsar el botón derecho para mostrar el menú contextual y selecciona reducir volumen
+    2. En el apartado Tamaño del espacio que desea reducir, indicamos el tamaño que queremos disminuir del que tiene actualmente el volumen (si el volumen ocupaba más de un disco, 	   puede reducirse a menos discos).
+    3. Cuando lo hayamos indicado, pulsamos reducir y se reducirá el tamaño del volumen
+    
+    
+Volúmenes distribuidos
+
+Un volumen distribuido lo forman la unión de dos o más áreas de espacio no asignado que están en dos o más discos duros. Cuando se guardan datos en un volumen distribuido, primero se ocupa el espacio libre del primer disco, cuando éste se ha llenado se pasa al segundo y así sucesivamente. Esto permite aprovechar pequeñas partes del espacio libre para formar un volumen de gran tamaño, ¡pero cuidado! si falla una parte del disco, se perderá toda la información del volumen. En cada disco se creará un volumen y cada uno tend
+
+Para crear un volumen distribuido necesitaremos al menos dos discos duros con espacio sin asignar en cada uno de ellos.
+	
+    1. Ir al Administrador de discos y seleccionar el disco donde que quieras crear el volumen distribuido
+    2. Mostrar el menú contextual y seleccionar Nuevo volumen distribuido
+    3. Pulsar siguiente y aparecerá el asistente para volumen nuevo
+    4. Seleccionar el disco o discos e indicar el tamaño del volumen distribuido
+    5. Pulsar siguiente
+	
+	
 
