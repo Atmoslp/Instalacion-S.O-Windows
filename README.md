@@ -1,4 +1,4 @@
-# Instalación-Sistemas-Operativos
+# Instalación Sistemas Operativos (Windows)
 
 
 
@@ -33,11 +33,9 @@
 <h3>4.1 Gestores de arranque</h3>
 
     4.2. Bootmgr	
-    4.3. Secuencia de arranque en Windows 7	
-    4.4. Secuencia de arranque seguro en Windows 8.1 y superiores	
-    4.5. Reparación de MBR	
-    4.6. Reparación de EFI Bootloader	
-    4.7. Modo seguro	
+    4.3. Reparación de MBR	
+    4.4. Reparación de EFI Bootloader	
+    4.5. Modo seguro	
   
   
 <h3>Tipos de instalaciones</h3>
@@ -64,7 +62,6 @@ Configuración posteriores a la instalación
 					######## 1.1 Instalar un Sistema Operativo ######## 
 
 					   
-  
 Después de conocer las técnicas básicas que utilizan los SSOO para gestionar los recursos de hardware, es hora de aprender a instalar un sistema operativo.
 En esta unidad voy explicar los pasos necesarios para la instalación de los sistemas operativos monousuarios propietarios más extendidos hoy en día, los de Microsoft Windows.
 
@@ -79,7 +76,7 @@ Microsoft actualmente tiene como versión más reciente Windows 10 tanto para or
 
 ![requisitos](https://user-images.githubusercontent.com/89795512/132556850-fb0775d1-134b-47e9-9d92-ecd821cd6640.png)
 
-**   <b>  1.2. Requisitos mínimos </b>
+<b> ** 1.2. Requisitos mínimos </b>
 
 
 
@@ -126,7 +123,7 @@ Para llevar a cabo la instalación de Microsoft Windows tendremos en cuenta las 
 <br>
 <br>
 
- **   <b> 1.3. Selección del Sistema Operativo Windows </b>
+ <b> ** 1.3. Selección del Sistema Operativo Windows </b>
  ![SELECCION-S O](https://user-images.githubusercontent.com/89795512/132552742-80c56d8a-4703-4ca3-919f-5f1249d3dc13.png)
 
 
@@ -141,7 +138,7 @@ En la siguiente tabla mostramos las diferencias más importantes entre las disti
 <br>
 <br>
 
-**   <b> 1.4. Ediciones de Windows 10 </b>
+<b> ** 1.4. Ediciones de Windows 10 </b>
 
 Microsoft Windows 10 dispone de 4 ediciones, en la página https://www.microsoft.com/es-es/WindowsForBusiness/Compare podemos comparar las diferencias entre cada una de ellas en los apartados de productividad, administración, seguridad y características básicas.
 
@@ -158,7 +155,7 @@ Estas tareas dependerá de donde se utilice el equipo, no es lo mismo un ordenad
 <br>
 <br>
 
-**   <b> 1.5. Requisitos técnicos del Sistema Operativo </b>
+<b> ** 1.5. Requisitos técnicos del Sistema Operativo </b>
 
 Todos los Sistemas Operativos necesitan de una configuración mínima de hardware para poder ejecutarlo de manera eficiente. Con el tiempo nos podemos encontrar con ordenadores y móviles que funcionan correctamente pero que no son los suficiente potentes para ejecutar los últimos SO y quedan obsoletos. Los programadores añaden nuevas características a sus Sistemas Operativos y programas según los avances tecnológicos, pero muchos ordenadores no pueden ejecutar estos nuevos SO y programas de forma eficiente, por lo que están obligados a adquirir equipos nuevos para utilizar los últimos productos.
 
@@ -180,17 +177,18 @@ Windows 10 además añade algunos requisitos extra para utilizar algunas caracte
 
     • Cortana necesita un Micrófono 
     • Windows Hello requiere una cámara por infrarrojos con iluminación especial para 
-      el reconocimiento facial o un lector de huellas dactilares compatible con la plataforma de datos biométricos de Windows
+      el reconocimiento facial o un lector de huellas dactilares compatible con la plataforma de datos biométricos de 	       Windows
     • Para el uso táctil, necesitas una tableta o un monitor que sea compatible con la función multitáctil.
     • Para un arranque seguro se requiere firmware compatible con UEFI v2.3.1 Errata B y con la entidad 
       de certificación de Microsoft Windows en la base de datos de firmas UEFI.
     • El cliente Hyper-V requiere un sistema de 64 bits con servicios de traducción 
-      de direcciones de segundo nivel (SLAT) y 2 GB de RAM adicionales (solo para Windows 10 Pro y Windows 10 Enterprise).
+      de direcciones de segundo nivel (SLAT) y 2 GB de RAM adicionales (solo para Windows 10 Pro y Windows 10 		       Enterprise).
     • Para instalar un sistema operativo de 64 bits en un equipo de 64 bits, 
       el procesador tiene que ser compatible con CMPXCHG16b,         PrefetchW y LAHF/SAHF.
     • BitLocker requiere el Módulo de plataforma segura (TPM) 1.2, TPM 2.0 o una unidad flash USB 
       (solo para Windows 10 Pro y Windows 10 Enterprise).
 
+<br>
 
 <b> Actualización de controladores </b>
 
@@ -218,14 +216,14 @@ En caso de que Windows no encuentre el driver, tendremos que ir a la web del fab
 Antes de empezar la instalación del Sistema Operativo en el ordenador es conveniente planificar el proceso por los siguientes motivos:
 
     • No ejecutar acciones que conlleven la pérdida de información de los usuarios de la máquina
-    • No perder tiempo durante el procedimiento debido a no haber preparado de antemano las utilidades de software y periféricos  
+    • No perder tiempo durante el procedimiento debido a no haber preparado de antemano las utilidades de software y 	       periféricos  
       hardware necesarios para llevar a cabo la instalación y proteger la información.
 
 La primera decisión a tomar es si actualizamos el sistema operativo existente en la máquina o realizamos una nueva instalación
 
  <br>
 
-<h3>Instalar o actualizar</h3>
+<b> Instalar o actualizar </b>
 
 Previamente debemos saber si el ordenador de destino tiene instalado un sistema operativo desde el que es posible actualizar Windows. Una nueva instalación suponer formatear las particiones existentes (incluso modificar la tabla de particiones)y volver a generar el sistema de archivos.
 
@@ -249,17 +247,16 @@ La solución más drástica a este problema es formatear y reinstalar el sistema
 
 
 
-<b>Degradación del sistema de archivos</b>
+<b> Degradación del sistema de archivos </b>
 
 	Los sistemas operativos Windows se degradan con el uso del sistema de archivos debido a problemas como 
-	la fragmentación interna y externa del sistema de archivos, las desisntalaciones de programas que no se hayan realizado 
-	limpias y que ensucian el registro del sistema, o la instalación de un número muy elevado de aplicaciones.
+	la fragmentación interna y externa del sistema de archivos, las desisntalaciones de programas que no se hayan 		realizado limpias y que ensucian el registro del sistema, o la instalación de un número muy elevado de 			aplicaciones.
 
 
  <br>
  <br>
 
-<b>** 2.2. Soporte utilizado para la instalación</b>
+<b> ** 2.2. Soporte utilizado para la instalación </b>
 
  • Desde una unidad DVD del propio equipo: es la forma más común de iniciar 
  la instalación y puede hacerse de dos 	maneras
@@ -274,9 +271,10 @@ La solución más drástica a este problema es formatear y reinstalar el sistema
 	
 • Desde un recurso compartido de la red. Utilizando un equipo que ya cuenta con otro sistema operativo
 
+<br>
+<br>
 
-
-<b>** 2.3. Particionamiento del disco </b>
+<b> ** 2.3. Particionamiento del disco </b>
 
 
 Es el acto de dividir un disco duro en múltiples unidades lógicas llamadas particiones. Cada partición es tratada como una unidad física. En algunos Sistemas Operativos basados en BSD, Solaris o GNU Hurd las particiones son llamadas "trozos" (slices).
@@ -311,21 +309,21 @@ Las desventajas de utilizar particiones:
     • Se requiere más tiempo para mover datos entre las diferentes partes del disco duro físico.
 
 
-<b>** 2.4. Esquema de particiones Master Boot Record </b>
+<b> ** 2.4. Esquema de particiones Master Boot Record </b>
 
 Es un tipo de bloque de arranque popularizado por IBM. Fue utilizado históricamente por  DOS, Microsoft Windows y Linux y otros sistemas operativos compatibles con PC. 
 
 
-<b>Partición primaria</b>
+<b> Partición primaria </b>
 
 Son las divisiones crudas del disco. Solo puede haber 4 en controladores IDE (15 en discos SCSI) de éstas o 3 primarias y una extendida. Depende de una tabla de particiones 
 
-<b>Partición extendida o secundaria</b>
+<b> Partición extendida o secundaria </b>
 
 Actúa como una partición primaria; sirve para contener infinidad de unidades lógicas en su interior. 
 Fue ideada para romper la limitación de 4 particiones primarias en un solo disco físico. Solo puede existir una partición de este tipo por disco y solo sirve para contener particiones lógicas.
 
-<b>Partición lógica</b>
+<b> Partición lógica </b>
 Ocupa una porción de la partición extendida o la totalidad de la misma.
 Se formatea con un tipo específico de sistema de archivos (FAT32, NTFS,...) y se le asigna una unidad. 
 No se puede instalar un Sistema Operativo en una partición lógica.
@@ -337,7 +335,7 @@ No se puede instalar un Sistema Operativo en una partición lógica.
 <br>
 
 
-<b>** 2.5. Esquema de particiones de tabla de partición GUID (GPT)</b>
+<b> ** 2.5. Esquema de particiones de tabla de partición GUID (GPT) </b>
 
 Hoy en día todos los Sistemas Operativos soportan. Es parte del estándar  Unified Extensible Firmware Interface (EFI) propuesto por Intel para reemplazar la vieja BIOS del PC.
 
@@ -347,9 +345,9 @@ Las principales ventajas de GPT frente a MBR son:
 
     • Admite discos de más de 2 TB hasta teóricamente 2 ZB ( 2*109 TB).
     • No es necesario crear particiones extendidas ni lógicas, por defecto admite hasta 128 particiones.
-    • Almacena una copia de seguridad del encabezado y de la tabla de particiones al final del disco que ayuda en la recuperación 
+    • Almacena una copia de seguridad del encabezado y de la tabla de particiones al final del disco que ayuda en la 	       recuperación 
       en el caso de que los primeros están dañados.
-    • Checksum CRC32 para detectar errores y daños de la cabecera y en la tabla de particiones al proporcionar redundancia.
+    • Checksum CRC32 para detectar errores y daños de la cabecera y en la tabla de particiones al proporcionar                 redundancia.
    
 ![GPT](https://user-images.githubusercontent.com/89795512/132539970-90e9c8ac-5fbf-4f07-8bc2-b28ed0134e24.jpg)
 
@@ -357,7 +355,7 @@ Las principales ventajas de GPT frente a MBR son:
  <br>
 
 
-<b>** 2.6. Preparar las particiones de los S.O. para permitir su arranque.</b>
+<b> ** 2.6. Preparar las particiones de los S.O. para permitir su arranque </b>
 
 Para que un disco sea bootable debe tener debe contener:
 
@@ -389,11 +387,12 @@ La creación de la partición ESP tiene prioridad sobre la partición MSR porque
 <br>
 <br>
 
-** <b>2.7. Administrar particiones en Windows de forma gráfica</b>
+** <b>2.7. Administrar particiones en Windows de forma gráfica </b>
 
 En Windows podemos configurar los discos en dos tipos:
 
-    • Disco básico: es un disco físico que contiene particiones primarias, extendidas o dispositivos lógicos (volúmenes básicos).
+    • Disco básico: es un disco físico que contiene particiones primarias, 
+      extendidas o dispositivos lógicos (volúmenes básicos).
 
     • Disco dinámico: es un disco físico que contiene volúmenes dinámicos.
 
@@ -422,6 +421,7 @@ Para realizar la conversión tenemos realizar lo siguiente:
     
 ![ad equipos](https://user-images.githubusercontent.com/89795512/132541689-0b3de9dd-6307-4780-b5ae-361d4818325b.PNG)
 
+<br>
 
 <b>Convertir dinámicos a discos básicos en Windows</b>
 
@@ -439,14 +439,14 @@ Para realizar la conversión tenemos realizar lo siguiente:
 
     1. Ir al Administrador de discos
     2. Seleccionar el disco que se desea convertir
-    3. Situarse en uno de los volúmenes que contenga y mostrar el menú contextual, seleccionar Eliminar volumen y confirmar.
+    3. Situarse en uno de los volúmenes que contenga y mostrar el menú contextual, seleccionar Eliminar volumen y 	        confirmar.
     4. Repetir el proceso con todos los volúmenes que contenga
-    5. Cuando no quede ningún volumen automáticamente se convertirá en disco básico. En caso contrario mostrar el menu contextual y seleccionar Convertir en disco básico
+    5. Cuando no quede ningún volumen automáticamente se convertirá en disco básico. En caso contrario mostrar el menu          contextual y seleccionar Convertir en disco básico
     6. Una vez finalizado, crear las particiones que desees
 
 Crear un volumen simple de forma gráfica
 
-    1. Ir al Administrador de discos y seleccionar el espacio no asignado de un disco dinámico y pulsar el botón derecho para mostrar el menú contextual
+    1. Ir al Administrador de discos y seleccionar el espacio no asignado de un disco dinámico y pulsar el botón derecho 	para mostrar el menú contextual
     2. Seleccionar Nuevo volumen simple (Nuevo volumen en Windows server 2003) y pulsar siguiente
     3. Elegir Simple y pulsar siguiente
     4. En la pantalla, indicar que tamaño tendrá el volumen y pulsar siguiente
@@ -461,19 +461,19 @@ Crear un volumen simple de forma gráfica
 <b>Extender un volumen de forma gráfica</b>
 	
 
-    1. Ir al Administrador de discos y seleccionar el volumen que quieras extender, pulsar el botón derecho para mostrar el menú contextual y selecciona Extender volumen
-    2. Pulsa siguiente y verás una pantalla en la que se ven los discos que tienen espacio sin asignar, selecciona el disco o discos donde vas a extender el volumen y el tamaño          que vas a utilizar en cada uno de ellos.
+    1. Ir al Administrador de discos y seleccionar el volumen que quieras extender, pulsar el botón derecho para mostrar 	el menú contextual y selecciona Extender volumen
+    2. Pulsa siguiente y verás una pantalla en la que se ven los discos que tienen espacio sin asignar, selecciona el 	        disco o discos donde vas a extender el volumen y el tamaño que vas a utilizar en cada uno de ellos.
     3. Después pulsa siguiente y verás la pantalla de finalización del asistente con un resumen
     4. Pulsar Finalizar y se extenderá el volumen.
 
-<b>Reducir un volumen (windows 10 y server 2012)</b>
+<b> Reducir un volumen (windows 10 y server 2012) </b>
 
-    1. Ir al Administrador de discos y seleccionar el volumen que quieras reducir, pulsar el botón derecho para mostrar el menú contextual y selecciona reducir volumen
-    2. En el apartado Tamaño del espacio que desea reducir, indicamos el tamaño que queremos disminuir del que tiene actualmente el volumen (si el volumen ocupaba más de un disco, 	   puede reducirse a menos discos).
+    1. Ir al Administrador de discos y seleccionar el volumen que quieras reducir, pulsar el botón derecho para mostrar        el menú contextual y selecciona reducir volumen
+    2. En el apartado Tamaño del espacio que desea reducir, indicamos el tamaño que queremos disminuir del que tiene 	        actualmente el volumen (si el volumen ocupaba más de un disco, puede reducirse a menos discos).
     3. Cuando lo hayamos indicado, pulsamos reducir y se reducirá el tamaño del volumen
     
     
-<b>Volúmenes distribuidos</b>
+<b> Volúmenes distribuidos </b>
 
 Un volumen distribuido lo forman la unión de dos o más áreas de espacio no asignado que están en dos o más discos duros. Cuando se guardan datos en un volumen distribuido, primero se ocupa el espacio libre del primer disco, cuando éste se ha llenado se pasa al segundo y así sucesivamente. Esto permite aprovechar pequeñas partes del espacio libre para formar un volumen de gran tamaño, ¡pero cuidado! si falla una parte del disco, se perderá toda la información del volumen. En cada disco se creará un volumen y cada uno tend
 
@@ -488,7 +488,7 @@ Para crear un volumen distribuido necesitaremos al menos dos discos duros con es
 <br>	
 <br>
 
-<b> ** 2.8. Administrar particiones en Windows por comandos</b>
+<b> ** 2.8. Administrar particiones en Windows por comandos </b>
 
 Diskpart es una herramienta de línea de comandos incluida a partir del Windows 2000 en adelante para sustituir a fdisk. Diskpart soporta el uso de scripts para automatizar el uso mediante el comando diskpart /s nombrescript.txt.
 
@@ -530,7 +530,8 @@ Más opciones del comando diskpart https://technet.microsoft.com/es-es/library/c
 
 
 							
-							######## 3.1 Sistemas de Ficheros ########
+					
+					######## 3.1 Sistemas de Ficheros ########
     
 
 Los archivos están almacenados en soportes de almacenamiento permanente. El SO los manipula a través de herramientas como el gestor de archivos.
@@ -576,12 +577,12 @@ El uso ideal de FAT32 es para memorias externas donde no vayamos a guardar archi
  <br>
  <br>
 
-<b>** 4.2. NFTS</b>
+<b> ** 3.3. NFTS </b>
 
 Este formato es el sucesor de FAT32, desarrollado por Microsoft. NTFS elimina las dos limitaciones de FAT32 (los 4GB y los 8TB). Este formato de archivos también incluye una serie de novedades y mejoras necesarias para que los sistemas operativos modernos puedan funcionar sin problema y, sobre todo, en temas de seguridad, entre otras:
 
     • Escalabilidad: Teóricamente soporta volúmenes de hasta 16 EB
-    • Journaling: Crear y guardar un diario de cambios que nos pueden ayudar a recuperarnos rápidamente de los errores si el ordenador se bloquea.
+    • Journaling: Crear y guardar un diario de cambios que nos pueden ayudar a recuperarnos rápidamente de los errores 	       si el ordenador se bloquea.
     • Compresión
     • Cifrado: Encrypting File System (EFS)
     • Cuotas
@@ -596,12 +597,151 @@ Este formato es el ideal para trabajar con discos duros internos que vayamos a u
  <br>
  <br>
  
-<b>** 4.3. exFAT</b>
+<b>** 3.4. exFAT</b>
 
-	exFAT vio la luz en 2006 y se introdujo en la mayoría de los sistemas operativos modernos, incluido Windows XP. Este sistema de archivos está pensado para unidades flash, siendo un sistema mucho más liviano que NTFS, sin las características de seguridad de este, pero también sin las limitaciones de FAT32.
+	exFAT vio la luz en 2006 y se introdujo en la mayoría de los sistemas operativos modernos, incluido Windows XP. 	Este sistema de archivos está pensado para unidades flash, siendo un sistema mucho más liviano que NTFS, sin las 	características de seguridad de este, pero también sin las limitaciones de FAT32.
 
-	Todos los sistemas operativos de PC (Windows, Mac y Linux (aunque en este es posible que tengamos que instalar algunas librerías)) son compatibles de forma nativa con exFAT, al contrario que con NTFS. Este formato de archivos también es compatible con un gran número de dispositivos (televisiones, reproductores multimedia, videoconsolas, etc), aunque no llega al nivel de compatibilidad de FAT32.
+	Todos los sistemas operativos de PC (Windows, Mac y Linux (aunque en este es posible que tengamos que instalar 		algunas librerías)) son compatibles de forma nativa con exFAT, al contrario que con NTFS. Este formato de 		archivos también es compatible con un gran número de dispositivos (televisiones, reproductores multimedia, 		videoconsolas, etc), aunque no llega al nivel de compatibilidad de FAT32.
 
-	exFAT podría definirse como una actualización de FAT32 donde prima principalmente la compatibilidad y sencillez del formato de archivos, aunque eliminando las restricciones de los 4GB por archivo y 8 TB de tamaño máximo de partición.
+	exFAT podría definirse como una actualización de FAT32 donde prima principalmente la compatibilidad y sencillez 	del formato de archivos, aunque eliminando las restricciones de los 4GB por archivo y 8 TB de tamaño máximo de 		partición.
 
-	El uso recomendado para exFAT es para unidades externas (generalmente memorias USB o tarjetas SD) donde vayamos a guardar archivos de más de 4 GB y que queramos que sea compatible con el mayor número de dispositivos posibles. Si no vamos a guardar archivos de más de 4 GB en esas unidades, mejor optar por FAT32.  
+	El uso recomendado para exFAT es para unidades externas (generalmente memorias USB o tarjetas SD) donde vayamos 	a guardar archivos de más de 4 GB y que queramos que sea compatible con el mayor número de dispositivos 		posibles. Si no vamos a guardar archivos de más de 4 GB en esas unidades, mejor optar por FAT32. 
+	
+	
+<br>
+<br>
+	
+	
+<b>**3.5. HFS+</b>
+
+Hierarchical File System + es el sistema de archivos desarrollado por Apple Inc. para reemplazar al HFS. 
+
+Soporta archivos mucho más grandes, y permite nombres de fichero de hasta 255 caracteres, de longitud UTF-16. Sin embargo, estas no son sus únicas ventajas frente a HFS, ya que también utiliza una tabla de asignación de 32 bits, permitiendo el uso de más de 65.536 bloques de asignación.
+
+El funcionamiento de HFS+ es muy parecido a su antecesor, aunque las características más llamativas han sido corregidas con el fin de hacerlo un programa más eficiente.
+	
+<br>
+<br>
+
+<b> **3.6. Formatear discos en Windows </b>
+
+Podemos dar formato a un disco desde la herramienta de disco.
+![FORMAT](https://user-images.githubusercontent.com/89795512/132566254-12dc9975-0f5e-4df6-bed2-bf5ceab96664.jpg)
+
+
+También podemos formatear desde diskpart con la opción format.
+
+![FORMAT2](https://user-images.githubusercontent.com/89795512/132566343-67e6af48-1cbc-48a8-8cf8-e2d9afa4882d.jpg)
+
+
+
+<br>
+<br>
+<br>
+
+
+
+
+					######## 4.1. Gestores de arranque ########
+					
+			
+
+Un gestor de arranque es un programa que administra el arranque del sistema operativo. En el caso de tener en tu ordenador más de un sistema operativo como Windows o Linux, el gestor lo que hace es permitir al usuario elegir entre un sistema u otro.
+
+Un ordenador actual tiene las siguientes fases de arranque:
+
+<b> 1. Iniciador ROM: </b>
+   
+En esta fase se envía una señal	de RESET para cargar los valores predefinidos en todos los 				registros. Especialmente, se inicializará el contador de programa con la dirección de arranque del cargador ROM 	(almacenado en la BIOS del computador).
+	
+<b> 2. Cargador de SO: </b>	
+
+En esta fase, se indica el	sector	de inicio del	disco	donde	se encuentra el sistema operativo.
+Parte	residente del SO: Esta fase es la responsable de la inicialización del sistema operativo y se realizan las	siguientes tareas:
+	
+        a. verificación	de la consistencia del sistema de ficheros
+      	b. la creación de las estructuras en memoria principal de los datos internos del sistema operativo,	
+        c. la inicialización del sistema de memoria virtual,
+        d. habilitación	de interrupciones,
+        e. etc...
+	
+	
+<b> 3. Fase normal de ejecución del S.O </b>
+
+En esta fase se inicializan los servidores principales del sistema operativo y de todos los servicios
+a nivel de usuario. Windows utiliza actualmente el gestor de arranque <b>Bootmgr</b>
+
+
+<br>
+<br>
+	
+	
+<b> **4.2. Bootmgr </b>
+
+La  secuencia  de  arranque  de  Windows  7 y superiores  es  distinta  de anteriores versiones de Windows. La principal diferencia estriba en que se ha cambiado el gestor de arranque, ya no se usa el ntldr sino que se usa el Windows Boot Manager (bootmgr).
+
+El Administrador de arranque de Windows (Bootmgr) es el archivo encargado del arranque de los SO Windows actuales. Controla el proceso de arranque mostrando el menú multiarranque. Después llama al archivo WinLoad.exe en \Windows\system32 y dará paso al archivo ntoskrnl.exe que arrancará el sistema.
+
+	
+	
+<b> Modificación del arranque en Windows </b>
+
+Es posible elegir que Sistema Operativo que deseamos utilizar al arrancar si tenemos instalado más de uno, por ejemplo Windows 10 o Windows Server 16. 
+
+Mientras  que  el  gestor  ntldr  usaba  un  fichero  de  texto  denominado  boot.ini  para  configurar sus opciones,  bootmgr  utiliza  una  base  de  datos  conocida  como  Boot  Configuration  Data (BCD)  que  no puede ser editada directamente como lo era el boot.ini ya que no es un fichero de texto.
+
+El BCD es una base de datos con datos sobre la configuración del arranque que se suele almacenar en \Boot\Bcd.
+
+La configuración se guarda en una serie de ficheros llamados BCD (Boot Configuration Data) que se administran mediante el comando bcdedit.exe
+
+![boot](https://user-images.githubusercontent.com/89795512/132568212-d657a9c5-21ea-4c3f-a885-67eb29f26cbf.JPG)
+
+<br>
+<br>
+	
+<b> Secure Boot </b>
+
+Secure Boot es una nueva característica de las placas base UEFI que impide la ejecución de cualquier software no firmado y certificado por el fabricante, por lo que cualquier amenaza que intentará atacar durante el inicio se vería frustrada, pues se detendría el arranque del sistema. Los fabricantes pueden decidir si permiten desactivar esta opción. 
+A partir de Microsoft Windows 8, Windows exige tener esta opción en los fabricantes para obtener la certificación Windows compatible. Esta opción dio muchos problemas para instalar el Sistema Operativo GNU/Linux por lo que muchos usuarios lo desactivaron. Actualmente existen distribuciones que pueden instalar también con el sistema activado.
+ Vídeo de demostración de Secure Boot:
+ https://technet.microsoft.com/en-us/windows/jj737995.aspx
+ 
+ <br>
+ 
+<b> Trusted Boot </b>
+
+Después de pasar Secure Boot, se activa Trusted Boot. El bootloader verifica la firma digital del kernel de Windows antes de cargarlo. El kernel de Windows, por turnos, verifica cada componente de windows en el proceso de arranque, incluyendo controladores de inicio, ficheros de arranque y ELAM. Si un fichero ha sido modificado, el bootloader detecta el problema y no cargará el componente corrupto. Muchas veces Windows puede reparar el componente corrupto automáticamente, restaurante la integridad de Windows y permitiendo arrancar el PC normalmente.
+
+<br>
+
+<b> Measured Boot </b>
+
+Permite que un servidor de confianza en la red verifique la integridad del proceso de arranque en Windows. Dependiendo de la configuración permite detectar si el cliente está sano y darle acceso a toda la red o solo a una parte limitada mientras esté en cuarentena.
+
+<b> ** 4.3. Reparación de MBR </b>
+
+Tenemos que iniciar el sistema desde el CD original de instalación de Windows. Llegará un momento en que el propio programa de instalación nos dará la opción de realizar una reparación automática del inicio de Windows. Escogemos esta opción y comprobamos si el sistema es capaz de repararse automáticamente. 
+
+![mbr](https://user-images.githubusercontent.com/89795512/132570640-a5ba29d3-01a1-4b82-bbed-b5a870ccbea7.JPG)
+
+![mbr2](https://user-images.githubusercontent.com/89795512/132570692-0f0fb3c2-2d85-4e3d-b2dd-c41e012978ff.JPG)
+
+![recu](https://user-images.githubusercontent.com/89795512/132570772-76605b32-41bc-4c56-af8b-e86cffab04b2.JPG)
+
+Si comprobamos que dicho automatismo falla (cosa bastante probable), volvemos a iniciar el sistema desde el CD, pero esta vez desde el menú avanzado escogemos la opción de consola de recuperación o símbolo del sistema. 
+
+![image](https://user-images.githubusercontent.com/89795512/132570813-e6f40079-5640-4292-a18d-4c9b34b3bf54.png)
+
+Desde allí podemos ejecutar las siguientes órdenes:
+
+1. Si el archivo bootmgr está dañado o no aparece, desde la Consola de Recuperación reconstruimos el almacén BCD con el comando:
+		
+		bootrec.exe  /RebuildBcd 
+	
+2. Este comando instala el gestor de arranque de Windows 7 en el MBR. 
+
+		bootrec.exe /fixmbr
+	
+3. Este comando recupera el sector de arranque de Windows 7.
+
+		bootrec.exe /fixboot
