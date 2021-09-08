@@ -59,6 +59,8 @@ Configuración posteriores a la instalación
  <br>
                                         
 					######## 1.1 Instalar un Sistema Operativo ######## 
+					![INSTALACION-SO](https://user-images.githubusercontent.com/89795512/132554018-5a0ad004-e840-4f12-b184-9eae4fa1d385.png)
+
 					   
   
 Después de conocer las técnicas básicas que utilizan los SSOO para gestionar los recursos de hardware, es hora de aprender a instalar un sistema operativo.
@@ -134,16 +136,16 @@ En la siguiente tabla mostramos las diferencias más importantes entre las disti
 
 **   <b> 1.4. Ediciones de Windows 10 </b>
 
+Microsoft Windows 10 dispone de 4 ediciones, en la página https://www.microsoft.com/es-es/WindowsForBusiness/Compare podemos comparar las diferencias entre cada una de ellas en los apartados de productividad, administración, seguridad y características básicas.
 
+Es recomendable elegir la edición que facilite las tareas de administración del SO una vez instalado.
 
-      • Home: Para configurar un pc doméstico que será administrado por un usuario 
-        sin conocimientos avanzados de informática.
-        
-      • Pro o Enterprise: Para configurar un PC de una red de ordenadores que se necesita 
-        ser administrada de manera centralizada (Unión a Dominio y escritorio remoto)
-        
-     • Education: Para alumnos que esté estudiando por un tiempo determinado y quieran 
-       aprender a configurar equipos a nivel avanzado.
+Estas tareas dependerá de donde se utilice el equipo, no es lo mismo un ordenador de casa, que el de una oficina de una pyme o una gran empresa. La posibilidad de administrar los equipos de una red de manera remota y de centralizar esta tarea se implementa utilizando varias tecnologías, pero el primer paso es que el SO permite esta administración. 
+
+    • Home: para configurar un pc doméstico que será administrado por un usuario sin conocimientos avanzados de         	informática.
+    • Pro o Enterprise: para configurar un PC de una red de ordenadores que se necesita ser administrada de manera 		centralizada (Unión a Dominio y escritorio remoto)
+    • Education: Para alumnos que esté estudiando por un tiempo determinado y quieran aprender a configurar equipos a 		nivel avanzado.
+
        
     
 <br>
