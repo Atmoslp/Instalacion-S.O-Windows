@@ -54,7 +54,8 @@ Configuración posteriores a la instalación
  <br>
  
   <br>
-                                            ######## 1.1 Instalar un Sistema Operativo ######## 
+                                        
+					######## 1.1 Instalar un Sistema Operativo ######## 
 					   
   
 Después de conocer las técnicas básicas que utilizan los SSOO para gestionar los recursos de hardware, es hora de aprender a instalar un sistema operativo.
@@ -115,7 +116,8 @@ Para llevar a cabo la instalación de Microsoft Windows tendremos en cuenta las 
 
  **   <b> 1.3. Selección del Sistema Operativo Windows </b>
 
-En la página oficial del Sistema Operativo Windows de Microsoft tenemos información oficial del producto: https://www.microsoft.com/es-es/windows
+En la página oficial del Sistema Operativo Windows de Microsoft tenemos información oficial del producto: 
+https://www.microsoft.com/es-es/windows
 
 En esta página podemos consultar una tabla comparativa de sus diversas versiones y ediciones para poder evaluar cuál resulta más adecuado para instalar o actualizar en nuestro sistema informático.
 
@@ -196,7 +198,8 @@ En caso de que Windows no encuentre el driver, tendremos que ir a la web del fab
  
  
  
-                                             ######## 2.1 Planificación de la instalación ########
+                                              ######## 2.1 Planificación de la instalación ######## 
+					     
 
 Antes de empezar la instalación del Sistema Operativo en el ordenador es conveniente planificar el proceso por los siguientes motivos:
 
@@ -206,6 +209,7 @@ Antes de empezar la instalación del Sistema Operativo en el ordenador es conven
 
 La primera decisión a tomar es si actualizamos el sistema operativo existente en la máquina o realizamos una nueva instalación
 
+ <br>
 
 <h3>Instalar o actualizar</h3>
 
@@ -238,9 +242,10 @@ La solución más drástica a este problema es formatear y reinstalar el sistema
 	limpias y que ensucian el registro del sistema, o la instalación de un número muy elevado de aplicaciones.
 
 
+ <br>
+ <br>
 
-
-** <b> 2.2. Soporte utilizado para la instalación</b>
+<b>** 2.2. Soporte utilizado para la instalación</b>
 
  • Desde una unidad DVD del propio equipo: es la forma más común de iniciar 
  la instalación y puede hacerse de dos 	maneras
@@ -257,7 +262,7 @@ La solución más drástica a este problema es formatear y reinstalar el sistema
 
 
 
-** <b> 2.3. Particionamiento del disco </b>
+<b>** 2.3. Particionamiento del disco </b>
 
 
 Es el acto de dividir un disco duro en múltiples unidades lógicas llamadas particiones. Cada partición es tratada como una unidad física. En algunos Sistemas Operativos basados en BSD, Solaris o GNU Hurd las particiones son llamadas "trozos" (slices).
@@ -292,7 +297,7 @@ Las desventajas de utilizar particiones:
     • Se requiere más tiempo para mover datos entre las diferentes partes del disco duro físico.
 
 
-** <b> 2.4. Esquema de particiones Master Boot Record </b>
+<b>** 2.4. Esquema de particiones Master Boot Record </b>
 
 Es un tipo de bloque de arranque popularizado por IBM. Fue utilizado históricamente por  DOS, Microsoft Windows y Linux y otros sistemas operativos compatibles con PC. 
 
@@ -317,7 +322,7 @@ No se puede instalar un Sistema Operativo en una partición lógica.
 
 
 
-** <b>2.5. Esquema de particiones de tabla de partición GUID (GPT)</b>
+<b>** 2.5. Esquema de particiones de tabla de partición GUID (GPT)</b>
 
 Hoy en día todos los Sistemas Operativos soportan. Es parte del estándar  Unified Extensible Firmware Interface (EFI) propuesto por Intel para reemplazar la vieja BIOS del PC.
 
@@ -333,10 +338,11 @@ Las principales ventajas de GPT frente a MBR son:
    
 ![GPT](https://user-images.githubusercontent.com/89795512/132539970-90e9c8ac-5fbf-4f07-8bc2-b28ed0134e24.jpg)
 
+ <br>
+ <br>
 
 
-
-** <b>2.6. Preparar las particiones de los S.O. para permitir su arranque.</b>
+<b>** 2.6. Preparar las particiones de los S.O. para permitir su arranque.</b>
 
 Para que un disco sea bootable debe tener debe contener:
 
@@ -436,7 +442,7 @@ Crear un volumen simple de forma gráfica
 ![volumen](https://user-images.githubusercontent.com/89795512/132542311-6e301fd5-b9a2-4516-94ae-0374878fb5cc.PNG)
 
 
-<b>Extender un volumen de forma gráfica
+<b>Extender un volumen de forma gráfica</b>
 	
 
     1. Ir al Administrador de discos y seleccionar el volumen que quieras extender, pulsar el botón derecho para mostrar el menú contextual y selecciona Extender volumen
@@ -444,14 +450,14 @@ Crear un volumen simple de forma gráfica
     3. Después pulsa siguiente y verás la pantalla de finalización del asistente con un resumen
     4. Pulsar Finalizar y se extenderá el volumen.
 
-<b>Reducir un volumen (windows 10 y server 2012)
+<b>Reducir un volumen (windows 10 y server 2012)</b>
 
     1. Ir al Administrador de discos y seleccionar el volumen que quieras reducir, pulsar el botón derecho para mostrar el menú contextual y selecciona reducir volumen
     2. En el apartado Tamaño del espacio que desea reducir, indicamos el tamaño que queremos disminuir del que tiene actualmente el volumen (si el volumen ocupaba más de un disco, 	   puede reducirse a menos discos).
     3. Cuando lo hayamos indicado, pulsamos reducir y se reducirá el tamaño del volumen
     
     
-Volúmenes distribuidos
+<b>Volúmenes distribuidos</b>
 
 Un volumen distribuido lo forman la unión de dos o más áreas de espacio no asignado que están en dos o más discos duros. Cuando se guardan datos en un volumen distribuido, primero se ocupa el espacio libre del primer disco, cuando éste se ha llenado se pasa al segundo y así sucesivamente. Esto permite aprovechar pequeñas partes del espacio libre para formar un volumen de gran tamaño, ¡pero cuidado! si falla una parte del disco, se perderá toda la información del volumen. En cada disco se creará un volumen y cada uno tend
 
@@ -463,5 +469,14 @@ Para crear un volumen distribuido necesitaremos al menos dos discos duros con es
     4. Seleccionar el disco o discos e indicar el tamaño del volumen distribuido
     5. Pulsar siguiente
 	
-	
+<br>	
+<br>
 
+<b> ** 2.8. Administrar particiones en Windows por comandos</b>
+
+Diskpart es una herramienta de línea de comandos incluida a partir del Windows 2000 en adelante para sustituir a fdisk. Diskpart soporta el uso de scripts para automatizar el uso mediante el comando diskpart /s nombrescript.txt.
+
+    • Para ejecutar diskpart dirígete a Inicio -> Ejecutar y escribe cmd.
+    • En la línea de comandos escribe diskpart.
+    • Para conseguir una lista de los comandos disponibles en diskpart  usa el comando ? ó help.
+    • Para mostrar todos los discos usamos el comando list disk
