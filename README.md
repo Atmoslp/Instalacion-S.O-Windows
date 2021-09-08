@@ -55,7 +55,7 @@ Configuración posteriores a la instalación
  
  
                                             ######## 1.1 Instalar un Sistema Operativo ######## 
-					    ----------------------------------------------------
+					   
   
 Después de conocer las técnicas básicas que utilizan los SSOO para gestionar los recursos de hardware, es hora de aprender a instalar un sistema operativo.
 En esta unidad voy explicar los pasos necesarios para la instalación de los sistemas operativos monousuarios propietarios más extendidos hoy en día, los de Microsoft Windows.
@@ -65,6 +65,7 @@ Una familia de SSOO está formada por versiones antiguas del sistema que han dej
 Por ejemplo, en el caso de Apple tenemos el macOS Big Sur como versión más reciente para ordenadores y iOS 14 para móviles y tabletas.
 Microsoft actualmente tiene como versión más reciente Windows 10 tanto para ordenadores como dispositivos móviles.
 
+<br>
 
 **   <b>  1.2. Requisitos mínimos </b>
 
@@ -108,6 +109,7 @@ Para llevar a cabo la instalación de Microsoft Windows tendremos en cuenta las 
         ◦ Limitación del número de programas que se ejecutan al arrancar el sistema
 
 
+<br>
  
  **   <b> 1.3. Selección del Sistema Operativo Windows </b>
 
@@ -117,7 +119,7 @@ En esta página podemos consultar una tabla comparativa de sus diversas versione
 
 En la siguiente tabla mostramos las diferencias más importantes entre las distintas versiones de Windows 7, 8.1 y 10, que hemos obtenido de https://www.microsoft.com/es-es/windows/compare
 
-
+<br>
 
 **   <b> 1.4. Ediciones de Windows 10 </b>
 
