@@ -219,7 +219,9 @@ La solución más drástica a este problema es formatear y reinstalar el sistema
 
 <b>Degradación del sistema de archivos</b>
 
-	Los sistemas operativos Windows se degradan con el uso del sistema de archivos debido a problemas como la fragmentación interna y externa del sistema de archivos, las desisntalaciones de programas que no se hayan realizado limpias y que ensucian el registro del sistema, o la instalación de un número muy elevado de aplicaciones.
+	Los sistemas operativos Windows se degradan con el uso del sistema de archivos debido a problemas como 
+	la fragmentación interna y externa del sistema de archivos, las desisntalaciones de programas que no se hayan realizado 
+	limpias y que ensucian el registro del sistema, o la instalación de un número muy elevado de aplicaciones.
 
 
 
