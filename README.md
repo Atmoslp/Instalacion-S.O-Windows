@@ -431,4 +431,6 @@ Crear un volumen simple de forma gráfica
     7. Pulsar siguiente
     8. Verificar que todo es correcto y pulsar finalizar
 
+![volumen](https://user-images.githubusercontent.com/89795512/132542311-6e301fd5-b9a2-4516-94ae-0374878fb5cc.PNG)
+
 
