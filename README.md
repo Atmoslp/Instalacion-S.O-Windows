@@ -1,7 +1,14 @@
 # Instalación-Sistemas-Operativos
 
 
+
+
+
 <h2>#ÍNDICE</h2>
+
+
+![ÍNDICE](https://user-images.githubusercontent.com/89795512/132549359-a2b6f39b-4b39-4b4e-85ea-01b5a4312040.png)
+
 <h3>1.1 Instalar un Sistema Operativo</h3>
 
     1.2. Requisitos mínimos	
