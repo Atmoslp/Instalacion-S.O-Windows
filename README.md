@@ -253,28 +253,28 @@ Un programa de particionado en el disco puede ser usado para crear, cambiar de t
 Las principales ventajas de utilizar particiones:
 
     • Separación del Sistema Operativo de los programas y ficheros del usuario
-      	Esto permite copias de seguridad o clones de sólo el SO
+      Esto permite copias de seguridad o clones de sólo el SO
     • Tener un área separada del SO para la memoria virtual
     • Mantener cerca los programas y datos usados frecuentemente
     • Mantener ficheros cache y logs separados de otros ficheros
-	Estos pueden crecer rápidamente, pudiendo llenar el disco entero
+      Estos pueden crecer rápidamente, pudiendo llenar el disco entero
     • Permite instalar varios SO incompatibles (Ej. Linux, Mac OS X y Windows en distintas particiones)
     • Proteger y aislar ficheros, para hacer más fácil la recuperación de un sistema de ficheros o SO
     • Mejora del rendimiento en sistemas donde es más eficiente sistemas de ficheros 
-    	más pequeños. Por ejemplo NTFS es más eficiente en discos duros de gran capacidad 
-	si se divide en particiones.
+      más pequeños. Por ejemplo NTFS es más eficiente en discos duros de gran capacidad 
+      si se divide en particiones.
     
 Las desventajas de utilizar particiones:
 
     • Reduce el espacio disponible al tener que duplicar el SO áreas de administración en cada partición
     • Puede reducir el rendimiento en sistemas donde los datos 
-    	son accedidos regularmente en paralelo o en particiones múltiples
+      son accedidos regularmente en paralelo o en particiones múltiples
     • Reduce la eficacia de los optimizadores del disco para reducir el número y 
-    	distancia de movimientos del cabezal 
+      distancia de movimientos del cabezal 
     • Incrementa la fragmentación del disco porque reduce la media de bloques libres 
-    	seguidos en cada partición
+      seguidos en cada partición
     • No se aprovecha todo el espacio libre del disco. 
-    	Por ejemplo, en 2 particiones libres de 3GB, no cabe un DVD de 4GB
+      Por ejemplo, en 2 particiones libres de 3GB, no cabe un DVD de 4GB
     • Se requiere más tiempo para mover datos entre las diferentes partes del disco duro físico.
 
 
@@ -310,10 +310,13 @@ Las principales ventajas de GPT frente a MBR son:
     • Admite discos de más de 2 TB hasta teóricamente 2 ZB ( 2*109 TB).
     • No es necesario crear particiones extendidas ni lógicas, por defecto admite hasta 128 particiones.
     • Almacena una copia de seguridad del encabezado y de la tabla de particiones al final del disco que ayuda en la recuperación 
-    	en el caso de que los primeros están dañados.
+      en el caso de que los primeros están dañados.
     • Checksum CRC32 para detectar errores y daños de la cabecera y en la tabla de particiones al proporcionar redundancia.
     
+    ![GPT](https://user-images.githubusercontent.com/89795512/132539267-7cfbb81f-7d7f-444d-a2c3-b5e919018af4.jpg)
+
     
+   
     
     
 
