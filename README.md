@@ -57,10 +57,10 @@ Configuración posteriores a la instalación
  <br>
  
  <br>
-                                        
-					######## 1.1 Instalar un Sistema Operativo ######## 
+  
+  
 ![INSTALACION-SOV 2](https://user-images.githubusercontent.com/89795512/132555599-0940007f-9db7-423b-99d1-034a34e4e0fd.png)
-
+					######## 1.1 Instalar un Sistema Operativo ######## 
 
 					   
   
