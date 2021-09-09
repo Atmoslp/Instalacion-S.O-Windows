@@ -673,13 +673,13 @@ En esta fase se envía una señal	de RESET para cargar los valores predefinidos 
 <b> 2. Cargador de SO: </b>	
 
 En esta fase, se indica el	sector	de inicio del	disco	donde	se encuentra el sistema operativo.
-Parte	residente del SO: Esta fase es la responsable de la inicialización del sistema operativo y se realizan las	siguientes tareas:
+Parte	residente del SO: Esta fase es la responsable de la inicialización del sistema operativo y se realizan las siguientes tareas:
 	
-        a. verificación	de la consistencia del sistema de ficheros
-      	b. la creación de las estructuras en memoria principal de los datos internos del sistema operativo,	
-        c. la inicialización del sistema de memoria virtual,
-        d. habilitación	de interrupciones,
-        e. etc...
+  a. verificación de la consistencia del sistema de ficheros
+  b. la creación de las estructuras en memoria principal de los datos internos del sistema operativo	
+  c. la inicialización del sistema de memoria virtual   
+  d. habilitación de interrupciones,
+  e. etc...
 	
 	
 <b> 3. Fase normal de ejecución del S.O </b>
