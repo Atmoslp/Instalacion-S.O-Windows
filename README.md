@@ -613,13 +613,14 @@ Este formato es el ideal para trabajar con discos duros internos que vayamos a u
  
 <b>** 3.4. exFAT</b>
 
-	exFAT vio la luz en 2006 y se introdujo en la mayoría de los sistemas operativos modernos, incluido Windows XP. 	Este sistema de archivos está pensado para unidades flash, siendo un sistema mucho más liviano que NTFS, sin las 	características de seguridad de este, pero también sin las limitaciones de FAT32.
+exFAT vio la luz en 2006 y se introdujo en la mayoría de los sistemas operativos modernos, incluido Windows XP. Este sistema de archivos
+está pensado para unidades flash, siendo un sistema mucho más liviano que NTFS, sin las características de seguridad de este, pero también sin las limitaciones de FAT32.
 
-	Todos los sistemas operativos de PC (Windows, Mac y Linux (aunque en este es posible que tengamos que instalar 		algunas librerías)) son compatibles de forma nativa con exFAT, al contrario que con NTFS. Este formato de 		archivos también es compatible con un gran número de dispositivos (televisiones, reproductores multimedia, 		videoconsolas, etc), aunque no llega al nivel de compatibilidad de FAT32.
+Todos los sistemas operativos de PC (Windows, Mac y Linux (aunque en este es posible que tengamos que instalar algunas librerías)) son compatibles de forma nativa con    	  exFAT, al contrario que con NTFS. Este formato de archivos también es compatible con un gran número de dispositivos (televisiones, reproductores multimedia, 			videoconsolas, etc), aunque no llega al nivel de compatibilidad de FAT32.
 
-	exFAT podría definirse como una actualización de FAT32 donde prima principalmente la compatibilidad y sencillez 	del formato de archivos, aunque eliminando las restricciones de los 4GB por archivo y 8 TB de tamaño máximo de 		partición.
+exFAT podría definirse como una actualización de FAT32 donde prima principalmente la compatibilidad y sencillez del formato de archivos, aunque eliminando las 			restricciones de los 4GB por archivo y 8 TB de tamaño máximo de partición.
 
-	El uso recomendado para exFAT es para unidades externas (generalmente memorias USB o tarjetas SD) donde vayamos 	a guardar archivos de más de 4 GB y que queramos que sea compatible con el mayor número de dispositivos 		posibles. Si no vamos a guardar archivos de más de 4 GB en esas unidades, mejor optar por FAT32. 
+El uso recomendado para exFAT es para unidades externas (generalmente memorias USB o tarjetas SD) donde vayamos a guardar archivos de más de 4 GB y que queramos que sea 	 compatible con el mayor número de dispositivos posibles. Si no vamos a guardar archivos de más de 4 GB en esas unidades, mejor optar por FAT32. 
 	
 	
 <br>
