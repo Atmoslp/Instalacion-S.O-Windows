@@ -147,7 +147,7 @@ Es recomendable elegir la edición que facilite las tareas de administración de
 Estas tareas dependerá de donde se utilice el equipo, no es lo mismo un ordenador de casa, que el de una oficina de una pyme o una gran empresa. La posibilidad de administrar los equipos de una red de manera remota y de centralizar esta tarea se implementa utilizando varias tecnologías, pero el primer paso es que el SO permite esta administración. 
 
     • Home: para configurar un pc doméstico que será administrado por un usuario sin conocimientos avanzados de informática.
-    • Pro o Enterprise: para configurar un PC de una red de ordenadores que se necesita ser administrada de manera centralizada (Unión a Dominio y escritorio remoto)
+    • Pro o Enterprise: para configurar un PC de una red de ordenadores que se necesita ser administrada de manera centralizada 
     • Education: Para alumnos que esté estudiando por un tiempo determinado y quieran aprender a configurar equipos a nivel avanzado.
 
        
@@ -177,14 +177,14 @@ Windows 10 además añade algunos requisitos extra para utilizar algunas caracte
 
     • Cortana necesita un Micrófono 
     • Windows Hello requiere una cámara por infrarrojos con iluminación especial para 
-      el reconocimiento facial o un lector de huellas dactilares compatible con la plataforma de datos biométricos de 	       Windows
+      el reconocimiento facial o un lector de huellas dactilares compatible con la plataforma de datos biométricos de Windows
     • Para el uso táctil, necesitas una tableta o un monitor que sea compatible con la función multitáctil.
     • Para un arranque seguro se requiere firmware compatible con UEFI v2.3.1 Errata B y con la entidad 
       de certificación de Microsoft Windows en la base de datos de firmas UEFI.
     • El cliente Hyper-V requiere un sistema de 64 bits con servicios de traducción 
-      de direcciones de segundo nivel (SLAT) y 2 GB de RAM adicionales (solo para Windows 10 Pro y Windows 10 		       Enterprise).
+      de direcciones de segundo nivel (SLAT) y 2 GB de RAM adicionales (solo para Windows 10 Pro y Windows 10 Enterprise).
     • Para instalar un sistema operativo de 64 bits en un equipo de 64 bits, 
-      el procesador tiene que ser compatible con CMPXCHG16b,         PrefetchW y LAHF/SAHF.
+      el procesador tiene que ser compatible con CMPXCHG16b, PrefetchW y LAHF/SAHF.
     • BitLocker requiere el Módulo de plataforma segura (TPM) 1.2, TPM 2.0 o una unidad flash USB 
       (solo para Windows 10 Pro y Windows 10 Enterprise).
 
@@ -208,9 +208,15 @@ En caso de que Windows no encuentre el driver, tendremos que ir a la web del fab
  
  <br>
  
- 
+  <br>
+  
+  
+  
  
                                               ######## 2.1 Planificación de la instalación ######## 
+					      
+					      ![PLANIFICACION](https://user-images.githubusercontent.com/89795512/132727704-9109fd09-6710-4d5e-8a66-c60d06a9e5c1.png)
+
 					     
 
 Antes de empezar la instalación del Sistema Operativo en el ordenador es conveniente planificar el proceso por los siguientes motivos:
