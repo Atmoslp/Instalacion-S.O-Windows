@@ -1040,7 +1040,8 @@ l problema con Windows, es que el proceso de instalación del Sistema operativo 
 	Cosas que hay que hacer después de clonar: 
 
     • Cambiar la dirección IP del Equipo: En ninguna red puede haber dos ordenadores con la misma IP.
-    • Cambiar el nombre del equipo: En ninguna red puede haber dos ordenadores con el mismo nombre. (Si el equipo forma parte de un dominio, para hacer el cambio, 
+    • Cambiar el nombre del equipo: En ninguna red puede haber dos ordenadores con el mismo nombre. 
+      (Si el equipo forma parte de un dominio, para hacer el cambio, 
       debo pasarlo a un grupo de trabajo, cambiar el nombre, y luego volver a introducirlo en el dominio).
     • Cambiar el identificador, o el número de licencia. Esto es opcional, en el caso de sistemas operativos clientes 	    
       de red, e imperativo en el caso de los servidores.
