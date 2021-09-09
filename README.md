@@ -543,6 +543,7 @@ Más opciones del comando diskpart https://technet.microsoft.com/es-es/library/c
 
 
 							
+![fat32-vs-exfat-vs-ntfs-thumbnail-1024x576](https://user-images.githubusercontent.com/89795512/132729138-ff67befd-28e7-4285-b75b-304d76742ef3.png)
 					
 					######## 3.1 Sistemas de Ficheros ########
     
