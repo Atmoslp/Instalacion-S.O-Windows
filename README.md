@@ -596,7 +596,8 @@ El uso ideal de FAT32 es para memorias externas donde no vayamos a guardar archi
 Este formato es el sucesor de FAT32, desarrollado por Microsoft. NTFS elimina las dos limitaciones de FAT32 (los 4GB y los 8TB). Este formato de archivos también incluye una serie de novedades y mejoras necesarias para que los sistemas operativos modernos puedan funcionar sin problema y, sobre todo, en temas de seguridad, entre otras:
 
     • Escalabilidad: Teóricamente soporta volúmenes de hasta 16 EB
-    • Journaling: Crear y guardar un diario de cambios que nos pueden ayudar a recuperarnos rápidamente de los errores 	       si el ordenador se bloquea.
+    • Journaling: Crear y guardar un diario de cambios que nos pueden ayudar a recuperarnos rápidamente de los errores 
+      si el ordenador se bloquea.
     • Compresión
     • Cifrado: Encrypting File System (EFS)
     • Cuotas
