@@ -146,9 +146,9 @@ Es recomendable elegir la edición que facilite las tareas de administración de
 
 Estas tareas dependerá de donde se utilice el equipo, no es lo mismo un ordenador de casa, que el de una oficina de una pyme o una gran empresa. La posibilidad de administrar los equipos de una red de manera remota y de centralizar esta tarea se implementa utilizando varias tecnologías, pero el primer paso es que el SO permite esta administración. 
 
-    • Home: para configurar un pc doméstico que será administrado por un usuario sin conocimientos avanzados de         	informática.
-    • Pro o Enterprise: para configurar un PC de una red de ordenadores que se necesita ser administrada de manera 		centralizada (Unión a Dominio y escritorio remoto)
-    • Education: Para alumnos que esté estudiando por un tiempo determinado y quieran aprender a configurar equipos a 		nivel avanzado.
+    • Home: para configurar un pc doméstico que será administrado por un usuario sin conocimientos avanzados de informática.
+    • Pro o Enterprise: para configurar un PC de una red de ordenadores que se necesita ser administrada de manera centralizada (Unión a Dominio y escritorio remoto)
+    • Education: Para alumnos que esté estudiando por un tiempo determinado y quieran aprender a configurar equipos a nivel avanzado.
 
        
     
