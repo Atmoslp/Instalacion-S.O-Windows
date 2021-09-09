@@ -654,6 +654,7 @@ También podemos formatear desde diskpart con la opción format.
 <br>
 
 
+![pngwing com](https://user-images.githubusercontent.com/89795512/132729674-b3ce747d-3c99-4602-8491-9a0bf6f736e6.png)
 
 
 					######## 4.1. Gestores de arranque ########
