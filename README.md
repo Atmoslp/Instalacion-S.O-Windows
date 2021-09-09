@@ -450,14 +450,14 @@ Para realizar la conversión tenemos realizar lo siguiente:
 
     1. Ir al Administrador de discos
     2. Seleccionar el disco que se desea convertir
-    3. Situarse en uno de los volúmenes que contenga y mostrar el menú contextual, seleccionar Eliminar volumen y 	        confirmar.
+    3. Situarse en uno de los volúmenes que contenga y mostrar el menú contextual, seleccionar Eliminar volumen y confirmar.
     4. Repetir el proceso con todos los volúmenes que contenga
-    5. Cuando no quede ningún volumen automáticamente se convertirá en disco básico. En caso contrario mostrar el menu          contextual y seleccionar Convertir en disco básico
+    5. Cuando no quede ningún volumen automáticamente se convertirá en disco básico. En caso contrario mostrar el menu contextual y seleccionar Convertir en disco básico
     6. Una vez finalizado, crear las particiones que desees
 
 Crear un volumen simple de forma gráfica
 
-    1. Ir al Administrador de discos y seleccionar el espacio no asignado de un disco dinámico y pulsar el botón derecho 	para mostrar el menú contextual
+    1. Ir al Administrador de discos y seleccionar el espacio no asignado de un disco dinámico y pulsar el botón derecho para mostrar el menú contextual
     2. Seleccionar Nuevo volumen simple (Nuevo volumen en Windows server 2003) y pulsar siguiente
     3. Elegir Simple y pulsar siguiente
     4. En la pantalla, indicar que tamaño tendrá el volumen y pulsar siguiente
@@ -472,15 +472,17 @@ Crear un volumen simple de forma gráfica
 <b>Extender un volumen de forma gráfica</b>
 	
 
-    1. Ir al Administrador de discos y seleccionar el volumen que quieras extender, pulsar el botón derecho para mostrar 	el menú contextual y selecciona Extender volumen
-    2. Pulsa siguiente y verás una pantalla en la que se ven los discos que tienen espacio sin asignar, selecciona el 	        disco o discos donde vas a extender el volumen y el tamaño que vas a utilizar en cada uno de ellos.
+    1. Ir al Administrador de discos y seleccionar el volumen que quieras extender, pulsar el botón derecho para mostrar 
+       el menú contextual y selecciona Extender volumen
+    2. Pulsa siguiente y verás una pantalla en la que se ven los discos que tienen espacio sin asignar, 
+       selecciona el disco o discos donde vas a extender el volumen y el tamaño que vas a utilizar en cada uno de ellos.
     3. Después pulsa siguiente y verás la pantalla de finalización del asistente con un resumen
     4. Pulsar Finalizar y se extenderá el volumen.
 
 <b> Reducir un volumen (windows 10 y server 2012) </b>
 
-    1. Ir al Administrador de discos y seleccionar el volumen que quieras reducir, pulsar el botón derecho para mostrar        el menú contextual y selecciona reducir volumen
-    2. En el apartado Tamaño del espacio que desea reducir, indicamos el tamaño que queremos disminuir del que tiene 	        actualmente el volumen (si el volumen ocupaba más de un disco, puede reducirse a menos discos).
+    1. Ir al Administrador de discos y seleccionar el volumen que quieras reducir, pulsar el botón derecho para mostrar el menú contextual y selecciona reducir volumen
+    2. En el apartado Tamaño del espacio que desea reducir, indicamos el tamaño que queremos disminuir del que tiene actualmente el volumen (si el volumen ocupaba más de un        	   disco, puede reducirse a menos discos).
     3. Cuando lo hayamos indicado, pulsamos reducir y se reducirá el tamaño del volumen
     
     
