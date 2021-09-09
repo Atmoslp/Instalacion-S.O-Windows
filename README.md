@@ -906,6 +906,129 @@ Reinicia el sistema y accederás a una pantalla que te permitirá inicio en modo
 
 ![image](https://user-images.githubusercontent.com/89795512/132576171-9919f302-8fd3-42ed-9ab6-d03c4461b120.png)
 
+<br>
+<br>
+<br>
+
+					######## 5.1. Tipos de Instalaciones ########
+					
+					
+<br>				
+					
+<b> ** 5.2. Manual </b>
 
 
+Si utilizamos un Pendrive, utilizamos una herramienta para prepararlo de Microsoft:
 
+Media Creation Tool para Windows 8.1 y 10:
+
+https://www.microsoft.com/en-us/software-download/windows8
+https://www.microsoft.com/es-es/software-download/windows10
+
+Utiliza una herramienta de terceros para quemar la imagen:
+
+Rufus: https://rufus.akeo.ie/?locale=es_ES
+
+
+Metemos el CD/DVD o pinchamos el USB de instalación en dicha unidad y arrancamos el Equipo. Una vez la BIOS termine de chequear el PC, oirás el CD/DVD girar y aparecerá la siguiente pantalla:
+
+![image](https://user-images.githubusercontent.com/89795512/132724466-335ae874-aa35-4a69-8cb8-128391e2e686.png)
+
+Si no apareciera, es que no está activado o disponible el arranque del ordenador a través de CD/DVD o USB en la BIOS. Para activarlo, debes estar atento al momento en que arranca, cuando se muestra el chequeo de la memoria RAM y demás:
+
+![image](https://user-images.githubusercontent.com/89795512/132724582-907572ee-9392-4bdb-85d8-b5524c7184b8.png)
+
+En este momento debes pulsar la tecla "Supr" (fijate que dice "Press DEL to run Setup") para entrar en el menú de la BIOS y activarlo. En otras BIOS / BIOS UEFI son comunes las combinaciones F1, F2, F10, DEL, ESC, y también combinaciones como  CTRL + ALT + ESC o CTRL + ALT + DEL en máquinas antiguas.
+
+Utiliza los cursores para desplazarte hasta el apartado "Boot" (arranque):
+
+![image](https://user-images.githubusercontent.com/89795512/132724624-5a39caff-9c1f-4721-8225-fbd59d5fd21e.png)
+
+Después pulsa "Enter" para ir al sub-menú:
+
+![image](https://user-images.githubusercontent.com/89795512/132724653-87a72f0a-4242-4093-89d6-3aa2d73a92bb.png)
+
+
+Debería estar configurado como opción de arranque el lector de CD/DVD o Removable Device antes del disco duro (Hard drive). Si no estuviera asi, utiliza los cursores para seleccionar el primer, segundo o tercer puesto y la  flecha a izquierdas, para cambiarlo. Al terminar, pulsa F10 para guardar cambios y salir:
+
+![image](https://user-images.githubusercontent.com/89795512/132724703-5e85da87-afb6-481b-900e-83ba99f30fed.png)
+
+
+Selecciona "[OK]" y pulsa "Enter" para guardar y salir. Si todo ha ido bien, debería aparecer el mensaje que ves al principio de esta opción. En el momento en que lo veas, pulsa cualquier tecla y se iniciará el proceso de instalación.
+
+En equipos nuevos, está configurado por defecto Secure Boot, si tienes problemas para arrancar desde el CD/DVD o el USB de por ejemplo un Windows 7 puedes desactivar esta opción en la BIOS UEFI utilizando el modo Legacy, en cada fabricante es diferente.
+
+
+![image](https://user-images.githubusercontent.com/89795512/132724747-7964e815-a80a-4fb7-998b-4dc2d36a8933.png)
+
+<br>
+<br>
+
+<b> Acceder a UEFI desde la configuración de Windows 10 </b>
+
+Si tienes Windows 10 instalado, puedes entrar en la configuración de UEFI desde Windows.
+
+Si tener ningún programa en ejecución, vamos a la Configuración del sistema desde el menú inicio y a continuación elegimos la opción Actualización y seguridad para posteriormente elegir la opción Recuperación del menú del lateral izquierdo. Esto nos mostrará en el panel de la derecha la opción de Inicio avanzado junto con un botón de Reiniciar ahora.
+
+![image](https://user-images.githubusercontent.com/89795512/132724925-033eaf02-69ad-452d-bcaa-bbf046f493db.png)
+
+Al pulsar sobre él, el sistema nos mostrará una pantalla donde podremos elegir la forma en la que queremos realizar el reinicio. En esta ocasión elegiremos Solucionar problemas, a continuación indicaremos que queremos entrar en las Opciones Avanzadas y posteriormente en los ajustes de UEFI. Una vez ahí, sólo queda pulsar sobre el botón de reinicio para entrar en la configuración de firmware UEFI.
+
+![image](https://user-images.githubusercontent.com/89795512/132724950-d1a493d7-fd99-4a98-a7e5-d1834874bf7e.png)
+
+
+Acceder desde el símbolo del sistema a UEFI en Windows 10
+
+En esta ocasión, lo primero que hacemos es abrir una ventana de símbolo de sistema con permisos de administrador haciendo clic con el botón derecho del ratón sobre el menú inicio y seleccionando la opción Símbolo del sistema (administrador).
+
+A continuación, escribimos el comando shutdown.exe /r /o y pulsamos Enter. Esto nos mostrará un mensaje en el que se nos dice que nuestro ordenador se va a reiniciar en menos de un minuto. Una vez que se reinicie, tendremos que seguir los pasos realizados en el anterior punto desde que elegimos la opción de Solucionar problemas.
+
+![image](https://user-images.githubusercontent.com/89795512/132724991-b7992700-3359-42e8-81b9-5810f6e5066b.png)
+
+
+Hasta este punto también podemos llegar pulsando sobre la opción Apagar del menú inicio y manteniendo la tecla Shift pulsada, elegir la opción de reiniciar el equipo.
+
+<br>
+<br>
+
+
+<b> ** 5.3. Desatendida </b>
+
+La instalación desatendida en Windows 8 y posteriores se realiza a través de la herramienta ADK ( Assessment and Deployment Kit), descargable también desde la web de Microsoft.También nos permite generar un fichero .iso, que se puede grabar para generar un DVD de instalación desatendida.
+
+![image](https://user-images.githubusercontent.com/89795512/132725175-10f41d85-c655-4552-8537-4d3696b9dcb8.png)
+
+Descarga de Windows 10 ADK https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit
+
+Existen herramientas de tercero que permiten realizarlo, como Windows Answer File Generator:
+![image](https://user-images.githubusercontent.com/89795512/132725232-a0fc601c-b4ac-4943-9853-d54419ee56c9.png)
+
+<b> ** 5.4. En red por imágenes </b>
+
+Consiste en la utilización de un software especial, que permite clonar desde particiones, a discos duros enteros.  Los programas más utilizados son Norton Ghost y Clonezilla.
+
+![image](https://user-images.githubusercontent.com/89795512/132725393-567d7c39-c36e-45c4-90ce-9d667c899bc5.png)
+
+
+l problema con Windows, es que el proceso de instalación del Sistema operativo incluye tanto un número de licencia como un identificador para el equipo, que se genera con datos proporcionados por la BIOS, que debería ser único para cada ordenador. El problema se plantea en el caso de la clonación, que duplica dicho identificador. Esto provoca fallos inesperados en los sistemas clonados, por lo que los programas de clonación deberían incluir una herramienta que permita cambiar dicho identificador, y también el número de licencia.
+
+	Cosas que hay que hacer después de clonar: 
+
+    • Cambiar la dirección IP del Equipo: En ninguna red puede haber dos ordenadores con la misma IP.
+    • Cambiar el nombre del equipo: En ninguna red puede haber dos ordenadores con el mismo nombre. (Si el equipo forma       parte de un dominio, para hacer el cambio, debo pasarlo a un grupo de trabajo, cambiar el nombre, y luego               volver a introducirlo en el dominio).
+    • Cambiar el identificador, o el número de licencia. Esto es opcional, en el caso de sistemas operativos clientes 	    de red, e imperativo en el caso de los servidores.
+
+<br>
+<br>
+
+<b> ** 6.4. En red por servidores </b>
+
+Esta opción está desarrollada para el despliegue de sistemas Windows. Se realiza la instalación desde un servidor a ordenadores clientes dentro de la red de área local. Para poder instalar el sistema operativo, necesitamos una serie de requisitos:
+
+1.- El/Los ordenadores cliente deberán contar con una tarjeta de red que admita PXE. Esta tarjeta intentará obtener una dirección IP válida, a través de un servidor DHCP. 
+
+2.- El ordenador Servidor: Que tenga activado el servicio DHCP, y el de instalación remota: Servicio WDS en el caso de servidores Windows Server 2008/2012.
+
+![image](https://user-images.githubusercontent.com/89795512/132725599-24a7d51e-8b56-4153-9c8d-70b2eefbc1a3.png)
+
+    
