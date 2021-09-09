@@ -929,7 +929,8 @@ Reinicia el sistema y accederás a una pantalla que te permitirá inicio en modo
 
 
 
-![TIPOS](https://user-images.githubusercontent.com/89795512/132731642-48ed94a3-3e17-4f42-b6fe-0a5de30ba8ea.png)
+![TIPOS](https://user-images.githubusercontent.com/89795512/132731740-b8f79845-46eb-4173-af56-052b0d7d17e1.png)
+
 
 
 					    ######## 5.1. Tipos de Instalaciones ########
