@@ -59,7 +59,7 @@ Configuración posteriores a la instalación
   
 ![INSTALACION-SOV 2](https://user-images.githubusercontent.com/89795512/132555599-0940007f-9db7-423b-99d1-034a34e4e0fd.png)
 
-					######## 1.1 Instalar un Sistema Operativo ######## 
+					     ######## 1.1 Instalar un Sistema Operativo ######## 
 
 					   
 Después de conocer las técnicas básicas que utilizan los SSOO para gestionar los recursos de hardware, es hora de aprender a instalar un sistema operativo.
@@ -545,7 +545,7 @@ Más opciones del comando diskpart https://technet.microsoft.com/es-es/library/c
 							
 ![fat32-vs-exfat-vs-ntfs-thumbnail-1024x576](https://user-images.githubusercontent.com/89795512/132729138-ff67befd-28e7-4285-b75b-304d76742ef3.png)
 					
-					######## 3.1 Sistemas de Ficheros ########
+					    ######## 3.1 Sistemas de Ficheros ########
     
 
 Los archivos están almacenados en soportes de almacenamiento permanente. El SO los manipula a través de herramientas como el gestor de archivos.
@@ -657,7 +657,7 @@ También podemos formatear desde diskpart con la opción format.
 ![pngwing com](https://user-images.githubusercontent.com/89795512/132729674-b3ce747d-3c99-4602-8491-9a0bf6f736e6.png)
 
 
-					######## 4.1. Gestores de arranque ########
+					     ######## 4.1. Gestores de arranque ########
 					
 			
 
@@ -925,7 +925,14 @@ Reinicia el sistema y accederás a una pantalla que te permitirá inicio en modo
 <br>
 <br>
 
-					######## 5.1. Tipos de Instalaciones ########
+
+
+
+
+
+![TIPOS](https://user-images.githubusercontent.com/89795512/132731022-81ce1e42-a9e1-4a62-97df-43ea74608907.png)
+
+					    ######## 5.1. Tipos de Instalaciones ########
 					
 					
 <br>				
@@ -1030,8 +1037,10 @@ l problema con Windows, es que el proceso de instalación del Sistema operativo 
 	Cosas que hay que hacer después de clonar: 
 
     • Cambiar la dirección IP del Equipo: En ninguna red puede haber dos ordenadores con la misma IP.
-    • Cambiar el nombre del equipo: En ninguna red puede haber dos ordenadores con el mismo nombre. (Si el equipo forma       parte de un dominio, para hacer el cambio, debo pasarlo a un grupo de trabajo, cambiar el nombre, y luego               volver a introducirlo en el dominio).
-    • Cambiar el identificador, o el número de licencia. Esto es opcional, en el caso de sistemas operativos clientes 	    de red, e imperativo en el caso de los servidores.
+    • Cambiar el nombre del equipo: En ninguna red puede haber dos ordenadores con el mismo nombre. (Si el equipo forma parte de un dominio, para hacer el cambio, 
+      debo pasarlo a un grupo de trabajo, cambiar el nombre, y luego volver a introducirlo en el dominio).
+    • Cambiar el identificador, o el número de licencia. Esto es opcional, en el caso de sistemas operativos clientes 	    
+      de red, e imperativo en el caso de los servidores.
 
 <br>
 <br>
