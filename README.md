@@ -212,12 +212,12 @@ En caso de que Windows no encuentre el driver, tendremos que ir a la web del fab
   
   
   
+ ![PLANIFICACION](https://user-images.githubusercontent.com/89795512/132727704-9109fd09-6710-4d5e-8a66-c60d06a9e5c1.png)
  
                                               ######## 2.1 Planificación de la instalación ######## 
 					      
-					      ![PLANIFICACION](https://user-images.githubusercontent.com/89795512/132727704-9109fd09-6710-4d5e-8a66-c60d06a9e5c1.png)
-
-					     
+					
+		     
 
 Antes de empezar la instalación del Sistema Operativo en el ordenador es conveniente planificar el proceso por los siguientes motivos:
 
