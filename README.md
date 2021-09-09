@@ -222,7 +222,7 @@ En caso de que Windows no encuentre el driver, tendremos que ir a la web del fab
 Antes de empezar la instalación del Sistema Operativo en el ordenador es conveniente planificar el proceso por los siguientes motivos:
 
     • No ejecutar acciones que conlleven la pérdida de información de los usuarios de la máquina
-    • No perder tiempo durante el procedimiento debido a no haber preparado de antemano las utilidades de software y 	       periféricos  
+    • No perder tiempo durante el procedimiento debido a no haber preparado de antemano las utilidades de software y periféricos  
       hardware necesarios para llevar a cabo la instalación y proteger la información.
 
 La primera decisión a tomar es si actualizamos el sistema operativo existente en la máquina o realizamos una nueva instalación
@@ -252,11 +252,13 @@ Los sistemas operativos Windows se degradan con el uso del sistema de archivos d
 La solución más drástica a este problema es formatear y reinstalar el sistema operativo.
 
 
+<br>
 
 <b> Degradación del sistema de archivos </b>
 
 	Los sistemas operativos Windows se degradan con el uso del sistema de archivos debido a problemas como 
-	la fragmentación interna y externa del sistema de archivos, las desisntalaciones de programas que no se hayan 		realizado limpias y que ensucian el registro del sistema, o la instalación de un número muy elevado de 			aplicaciones.
+	la fragmentación interna y externa del sistema de archivos, las desisntalaciones de programas que no se hayan realizado limpias 
+	y que ensucian el registro del sistema, o la instalación de un número muy elevado de aplicaciones.
 
 
  <br>
@@ -313,7 +315,10 @@ Las desventajas de utilizar particiones:
     • No se aprovecha todo el espacio libre del disco. 
       Por ejemplo, en 2 particiones libres de 3GB, no cabe un DVD de 4GB
     • Se requiere más tiempo para mover datos entre las diferentes partes del disco duro físico.
+    
 
+<br>
+<br>
 
 <b> ** 2.4. Esquema de particiones Master Boot Record </b>
 
@@ -351,9 +356,9 @@ Las principales ventajas de GPT frente a MBR son:
 
     • Admite discos de más de 2 TB hasta teóricamente 2 ZB ( 2*109 TB).
     • No es necesario crear particiones extendidas ni lógicas, por defecto admite hasta 128 particiones.
-    • Almacena una copia de seguridad del encabezado y de la tabla de particiones al final del disco que ayuda en la 	       recuperación 
+    • Almacena una copia de seguridad del encabezado y de la tabla de particiones al final del disco que ayuda en la recuperación 
       en el caso de que los primeros están dañados.
-    • Checksum CRC32 para detectar errores y daños de la cabecera y en la tabla de particiones al proporcionar                 redundancia.
+    • Checksum CRC32 para detectar errores y daños de la cabecera y en la tabla de particiones al proporcionar redundancia.
    
 ![GPT](https://user-images.githubusercontent.com/89795512/132539970-90e9c8ac-5fbf-4f07-8bc2-b28ed0134e24.jpg)
 
